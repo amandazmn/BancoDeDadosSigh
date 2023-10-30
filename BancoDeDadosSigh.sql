@@ -109,14 +109,20 @@ CREATE TABLE IF NOT EXISTS   `hospede_hospedagem` (
     FOREIGN KEY (`id_quarto`)
     REFERENCES   `quartos` (`id_quarto`));
 
-
+-- -----------------------------------------------------
+-- Table   `departamentos`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS   `departamentos` (
+  `id_departamento` INT NOT NULL,
+  `nome_departamernto` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id_departamento`));
+  
 -- -----------------------------------------------------
 -- Table   `pedidos`
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS   `pedidos` (
   `id_pedidos` INT NOT NULL,
   `data_horario` DATETIME NOT NULL,
-  `tipo` VARCHAR(45) NOT NULL,
   `descrição` VARCHAR(45) NULL,
   `quantidade` INT NOT NULL,
   `preco` FLOAT NULL,
@@ -125,13 +131,17 @@ CREATE TABLE IF NOT EXISTS   `pedidos` (
   `pago` TINYINT NULL,
   `id_hospedagem` INT NOT NULL,
   `id_quarto` INT NOT NULL,
+  `id_departamento` INT NOT NULL,
   PRIMARY KEY (`id_pedidos`),
   CONSTRAINT `fk_pedidos_hospedagens1`
     FOREIGN KEY (`id_hospedagem`)
     REFERENCES   `hospedagens` (`id_hospedagem`),
   CONSTRAINT `fk_pedidos_quartos1`
     FOREIGN KEY (`id_quarto`)
-    REFERENCES   `quartos` (`id_quarto`));
+    REFERENCES   `quartos` (`id_quarto`),
+  CONSTRAINT `fk_pedidos_departamentos1`
+    FOREIGN KEY (`id_departamento`)
+    REFERENCES `departamentos` (`id_departamento`));
 
 
 -- -----------------------------------------------------
@@ -150,13 +160,7 @@ CREATE TABLE IF NOT EXISTS   `necessidades_hospede` (
     REFERENCES   `necessidades_especiais` (`id_necessidade`));
 
 
--- -----------------------------------------------------
--- Table   `departamentos`
--- -----------------------------------------------------
-CREATE TABLE IF NOT EXISTS   `departamentos` (
-  `id_departamento` INT NOT NULL,
-  `nome_departamernto` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id_departamento`));
+
 
 -- -----------------------------------------------------
 -- Table   `cargos`
