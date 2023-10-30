@@ -122,7 +122,7 @@ CREATE TABLE IF NOT EXISTS   `departamentos` (
 CREATE TABLE IF NOT EXISTS   `pedidos` (
   `id_pedidos` INT NOT NULL,
   `data_horario` DATETIME NOT NULL,
-  `descrição` VARCHAR(45) NULL,
+  `descricao` VARCHAR(45) NULL,
   `quantidade` INT NOT NULL,
   `preco` FLOAT NULL,
   `pronto` TINYINT NOT NULL,
