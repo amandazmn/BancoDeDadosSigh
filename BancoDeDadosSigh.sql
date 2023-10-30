@@ -23,7 +23,6 @@ CREATE TABLE IF NOT EXISTS   `enderecos` (
   `endereco` VARCHAR(45) NOT NULL,
   `complemento` VARCHAR(45) NULL,
   `numero` INT NULL,
-  `enderecoscol` VARCHAR(45) NULL,
   PRIMARY KEY (`id_endereco`));
 
 
@@ -116,7 +115,7 @@ CREATE TABLE IF NOT EXISTS   `departamentos` (
   `id_departamento` INT NOT NULL,
   `nome_departamernto` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_departamento`));
-  
+
 -- -----------------------------------------------------
 -- Table   `pedidos`
 -- -----------------------------------------------------
