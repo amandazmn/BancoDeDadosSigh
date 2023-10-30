@@ -210,4 +210,25 @@ ALTER TABLE `departamentos` ADD `id_chefe_departamento` int;
 -- -----------------------------------------------------
 -- Alter table: adicionar chave estrangeira
 -- -----------------------------------------------------  
-ALTER TABLE `departamentos` ADD FOREIGN KEY (id_chefe_departamento) REFERENCES `funcionarios` (`id_funcionario`);      
+ALTER TABLE `departamentos` ADD FOREIGN KEY (id_chefe_departamento) REFERENCES `funcionarios` (`id_funcionario`);   
+
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (32146584, 'California', 'San Jose', 'PO Box 40575', 'Casa', 7253);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654091, 'California', 'Whittier', 'Suite 1', 'Casa', 3768);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (85928123, 'California', 'Palmdale', 'Room 206', 'Casa', 9351);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (75623921, 'California', 'San Diego', 'Room 152', 'Casa', 8368);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (11789160, 'California', 'Whittier', 'PO Box 59348', 'Casa', 8200);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654926, 'California', 'Santa Ana', 'PO Box 9725', 'Casa', 8770);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (93728656, 'California', 'Santa Rosa', 'PO Box 92409', 'Casa', 7858);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (67746963, 'California', 'Los Angeles', 'PO Box 92328', 'Casa', 3735);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (19460487, 'California', 'Van Nuys', 'PO Box 65611', 'Casa', 8670);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (77939486, 'California', 'Fresno', '2nd Floor', 'Casa', 6076);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (91175224, 'California', 'Corona', '3rd Floor', 'Casa', 9156);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (52528621, 'California', 'Santa Cruz', 'Apt 1345', 'Casa', 9909);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (49836154, 'California', 'Long Beach', 'Apt 1009', 'Casa', 7464);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (89202607, 'California', 'Garden Grove', '9th Floor', 'Casa', 9056);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (36645029, 'California', 'San Rafael', 'PO Box 18784', 'Casa', 8144);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'California', 'Garden Grove', 'Suite 22', 'Casa', 5413);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (5103495, 'California', 'Santa Barbara', 'Suite 8', 'Casa', 8627);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642669, 'California', 'Richmond', 'Suite 39', 'Casa', 6414);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (16648129, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
