@@ -256,3 +256,25 @@ insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, fr
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (533, '0', '1', 'SIM', '1', '0', '1', '194.75', 4, 3, 4);
 
 
+
+-- inserts necessidades_especiais Gabriely 
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (1, 'Intolerância a Lactose');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (2, 'Deficiência visual');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (3, 'Deficiência Auditiva');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (4, 'Deficiência Motora');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (5, 'Paralisia cerebral ');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (6, 'Transtorno Bipolar');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (7, 'Esquizofrinia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (8, 'Síndrome de down');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (9, 'Doença Celíaca');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (10, 'Intolerância ao gluten');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (11, 'Intolerância a Sacarose');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (12, 'Intolerância ao milho');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (13, 'Intolerância a castanhas');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (14, 'Paraplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (15, 'Monoplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (16, 'Amputação');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (17, 'Tatraplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (18, 'Triplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (19, 'Hemiplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
