@@ -304,6 +304,14 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
 
 
+-- select count 
+SELECT COUNT(*) FROM quartos;
+
+SELECT COUNT(*) FROM necessidades_especiais;
+
+SELECT COUNT(*) FROM hospedagens ;
+
+
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
@@ -375,3 +383,6 @@ DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
 DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
 DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
 SET SQL_SAFE_UPDATES = 1;
+
+
+
