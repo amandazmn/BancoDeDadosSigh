@@ -301,3 +301,15 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (34519,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734, '2022/05/20', '2023/05/15');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
 
+
+UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
+UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
+UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
+UPDATE quartos SET preco = 200.00 WHERE preco = 194.64;
+UPDATE quartos SET id_quarto = 766 WHERE id_quarto = 980;
+UPDATE quartos SET id_quarto = 179 WHERE num_cama_casal = 178;
+UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
+UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
+UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
+UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
+
