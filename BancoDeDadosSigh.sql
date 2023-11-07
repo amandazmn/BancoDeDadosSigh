@@ -227,7 +227,7 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (49836154, 'California', 'Long Beach', 'Apt 1009', 'Casa', 7464);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (89202607, 'California', 'Garden Grove', '9th Floor', 'Casa', 9056);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (36645029, 'California', 'San Rafael', 'PO Box 18784', 'Casa', 8144);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'California', 'Garden Grove', 'Suite 22', 'Casa', 5413);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'Cplifornia', 'Garden Grove', 'Suite 22', 'Casa', 5413);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (5103495, 'California', 'Santa Barbara', 'Suite 8', 'Casa', 8627);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642669, 'California', 'Richmond', 'Suite 39', 'Casa', 6414);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
