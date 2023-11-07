@@ -212,6 +212,7 @@ ALTER TABLE `departamentos` ADD `id_chefe_departamento` int;
 -- -----------------------------------------------------  
 ALTER TABLE `departamentos` ADD FOREIGN KEY (id_chefe_departamento) REFERENCES `funcionarios` (`id_funcionario`);   
 
+-- inserts enderecos gabrieli
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (32146584, 'California', 'San Jose', 'PO Box 40575', 'Casa', 7253);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654091, 'California', 'Whittier', 'Suite 1', 'Casa', 3768);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (85928123, 'California', 'Palmdale', 'Room 206', 'Casa', 9351);
@@ -233,7 +234,7 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (16648129, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
 
-
+-- inserts quartos Gabriely
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (980, '1', '1', 'SIM', '1', '1', '1', '194.64', 4, 3, 4);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (378, '1', '0', 'NÃO', '1', '1', '0', '271.49', 3, 2, 2);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (554, '0', '0', 'SIM', '1', '0', '1', '142.93', 6, 3, 3);
@@ -280,6 +281,7 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
 
 
+-- inserts hospedagens Gabriely
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023/08/27', '2023/08/15');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022/03/17', '2023/03/14');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (43481, '2022/01/23', '2023/01/14');
@@ -302,6 +304,7 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
 
 
+-- updates quartos Gabriely
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
 UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
 UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
@@ -312,4 +315,18 @@ UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
 UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
 UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
+
+
+-- updates necessidades_especiais Gabriely
+UPDATE necessidades_especiais SET id_necessidade = 21 WHERE id_necessidade = 1;
+UPDATE necessidades_especiais SET id_necessidade =30 WHERE id_necessidade = 7;
+UPDATE necessidades_especiais SET necessidade_especial = 'Deficiente visual' WHERE necessidade_especial = 'Deficiência visual';
+UPDATE necessidades_especiais SET id_necessidade = 1 WHERE id_necessidade = 20;
+UPDATE necessidades_especiais SET id_necessidade = 22 WHERE id_necessidade = 6;
+UPDATE necessidades_especiais SET necessidade_especial = 'Síndrome de Down' WHERE necessidade_especial = 'síndrome de down';
+UPDATE necessidades_especiais SET id_necessidade = 24 WHERE id_necessidade = 8;
+UPDATE necessidades_especiais SET necessidade_especial= 'Alergia á medicamento Talidomida' WHERE necessidade_especial = 'Talidomia';
+UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
+UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
+
 
