@@ -312,6 +312,16 @@ SELECT COUNT(*) FROM necessidades_especiais;
 SELECT COUNT(*) FROM hospedagens ;
 
 
+
+-- select all
+SELECT * FROM quartos ORDER BY id_quarto;
+
+SELECT * FROM necessidades_especiais ORDER BY id_necessidade;
+
+SELECT * FROM hospedagens ORDER BY id_hospedagem;
+
+
+
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
@@ -383,6 +393,5 @@ DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
 DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
 DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
 SET SQL_SAFE_UPDATES = 1;
-
 
 
