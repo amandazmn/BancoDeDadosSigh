@@ -305,6 +305,7 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872,
 
 
 -- updates quartos Gabriely
+SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
 UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
 UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
@@ -315,9 +316,10 @@ UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
 UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
 UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
-
+SET SQL_SAFE_UPDATES = 1;
 
 -- updates necessidades_especiais Gabriely
+SET SQL_SAFE_UPDATES = 0;
 UPDATE necessidades_especiais SET id_necessidade = 21 WHERE id_necessidade = 1;
 UPDATE necessidades_especiais SET id_necessidade =30 WHERE id_necessidade = 7;
 UPDATE necessidades_especiais SET necessidade_especial = 'Deficiente visual' WHERE necessidade_especial = 'Deficiência visual';
@@ -328,9 +330,10 @@ UPDATE necessidades_especiais SET id_necessidade = 24 WHERE id_necessidade = 8;
 UPDATE necessidades_especiais SET necessidade_especial= 'Alergia á medicamento Talidomida' WHERE necessidade_especial = 'Talidomia';
 UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
 UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
+SET SQL_SAFE_UPDATES = 1;
 
-
--- updates necessidades_especiais Gabriely
+-- updates hospedagens Gabriely
+SET SQL_SAFE_UPDATES = 0;
 UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
 UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
 UPDATE hospedagens SET data_saida = '2023/08/26' WHERE data_saida = '2023/08/27';
@@ -341,7 +344,53 @@ UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07
 UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
 UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
 UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
+SET SQL_SAFE_UPDATES = 1
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;
 
 -- delete quartos Gabriely 
 DELETE FROM quartos WHERE id_quarto = 980;
@@ -350,6 +399,12 @@ DELETE FROM quartos WHERE preco = '194.75';
 DELETE FROM quartos WHERE num_cama-casal = 9;
 DELETE FROM quartos WHERE num_cama_solteiro = 5;
 
+-- delete necessidades_especiais
+DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Intolerância ao milho';
+DELETE FROM necessidades_especiais WHERE id_necessidade = 13;
+DELETE FROM necessidades_especiais WHERE id_necessidade = 19;
+DELETE FROM necessidades_especiais WHERE id_necessidade = 9;
+DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Esquizofrinia';
 
 
 
