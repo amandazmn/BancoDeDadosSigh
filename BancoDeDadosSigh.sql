@@ -212,7 +212,7 @@ ALTER TABLE `departamentos` ADD `id_chefe_departamento` int;
 -- -----------------------------------------------------  
 ALTER TABLE `departamentos` ADD FOREIGN KEY (id_chefe_departamento) REFERENCES `funcionarios` (`id_funcionario`);   
 
--- inserts enderecos gabrieli
+-- inserts enderecos 
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (32146584, 'California', 'San Jose', 'PO Box 40575', 'Casa', 7253);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654091, 'California', 'Whittier', 'Suite 1', 'Casa', 3768);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (85928123, 'California', 'Palmdale', 'Room 206', 'Casa', 9351);
@@ -234,7 +234,7 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (16648129, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
 
--- inserts quartos Gabriely
+-- inserts quartos 
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (980, '1', '1', 'SIM', '1', '1', '1', '194.64', 4, 3, 4);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (378, '1', '0', 'NÃO', '1', '1', '0', '271.49', 3, 2, 2);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (554, '0', '0', 'SIM', '1', '0', '1', '142.93', 6, 3, 3);
@@ -258,7 +258,7 @@ insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, fr
 
 
 
--- inserts necessidades_especiais Gabriely 
+-- inserts necessidades_especiais 
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (1, 'Intolerância a Lactose');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (2, 'Deficiência visual');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (3, 'Deficiência Auditiva');
@@ -281,7 +281,7 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
 
 
--- inserts hospedagens Gabriely
+-- inserts hospedagens 
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023/08/27', '2023/08/15');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022/03/17', '2023/03/14');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (43481, '2022/01/23', '2023/01/14');
@@ -304,7 +304,7 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
 
 
--- updates quartos Gabriely
+-- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
 UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
@@ -318,7 +318,7 @@ UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
 UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
 SET SQL_SAFE_UPDATES = 1;
 
--- updates necessidades_especiais Gabriely
+-- updates necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
 UPDATE necessidades_especiais SET id_necessidade = 21 WHERE id_necessidade = 1;
 UPDATE necessidades_especiais SET id_necessidade =30 WHERE id_necessidade = 7;
@@ -332,7 +332,7 @@ UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
 UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
 SET SQL_SAFE_UPDATES = 1;
 
--- updates hospedagens Gabriely
+-- updates hospedagens 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
 UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
@@ -344,68 +344,34 @@ UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07
 UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
 UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
 UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
-SET SQL_SAFE_UPDATES = 1
+SET SQL_SAFE_UPDATES = 1;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-;
-
--- delete quartos Gabriely 
+-- delete quartos
+SET SQL_SAFE_UPDATES = 0;
 DELETE FROM quartos WHERE id_quarto = 980;
 DELETE FROM quartos WHERE nummax_hospedes = 8;
 DELETE FROM quartos WHERE preco = '194.75';
-DELETE FROM quartos WHERE num_cama-casal = 9;
+DELETE FROM quartos WHERE num_cama_casal = 9;
 DELETE FROM quartos WHERE num_cama_solteiro = 5;
+SET SQL_SAFE_UPDATES = 1;
+
 
 -- delete necessidades_especiais
+SET SQL_SAFE_UPDATES = 0;
 DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Intolerância ao milho';
 DELETE FROM necessidades_especiais WHERE id_necessidade = 13;
 DELETE FROM necessidades_especiais WHERE id_necessidade = 19;
 DELETE FROM necessidades_especiais WHERE id_necessidade = 9;
 DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Esquizofrinia';
+SET SQL_SAFE_UPDATES =  1;
 
 
-
-
+-- delete hospedagens
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM hospedagens WHERE id_hospedagem = 74872;
+DELETE FROM hospedagens WHERE id_hospedagem = 60675;
+DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
+DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
+DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
+SET SQL_SAFE_UPDATES = 1;
