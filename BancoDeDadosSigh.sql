@@ -330,3 +330,17 @@ UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
 UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
 
 
+-- updates necessidades_especiais Gabriely
+UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
+UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
+UPDATE hospedagens SET data_saida = '2023/08/26' WHERE data_saida = '2023/08/27';
+UPDATE hospedagens SET id_hospedagem = 74873 WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET id_hospedagem = 31308 WHERE id_hospedagem = 31300;
+UPDATE hospedagens SET id_hospedagem = 73451 WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07/21';
+UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
+UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
+UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
+
+
+
