@@ -227,7 +227,7 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (49836154, 'California', 'Long Beach', 'Apt 1009', 'Casa', 7464);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (89202607, 'California', 'Garden Grove', '9th Floor', 'Casa', 9056);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (36645029, 'California', 'San Rafael', 'PO Box 18784', 'Casa', 8144);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'Cplifornia', 'Garden Grove', 'Suite 22', 'Casa', 5413);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'California', 'Garden Grove', 'Suite 22', 'Casa', 5413);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (5103495, 'California', 'Santa Barbara', 'Suite 8', 'Casa', 8627);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642669, 'California', 'Richmond', 'Suite 39', 'Casa', 6414);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
@@ -278,3 +278,26 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (18, 'Triplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (19, 'Hemiplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
+
+
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023/08/27', '2023/08/15');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022/03/17', '2023/03/14');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (43481, '2022/01/23', '2023/01/14');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89929, '2022/09/30', '2022/09/28');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (59521, '2023/06/19', '2023/06/17');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (35170, '2023/08/05', '2023/08/04');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (33210, '2022/04/21', '2022/04/19');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (72549, '2022/04/18', '2023/04/16');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (67875, '2022/09/01', '2022/08/27');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (56426, '2022/12/08', '2022/12/06');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (10693, '2022/08/37', '2022/08/30');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14828, '2023/01/05', '2022/01/03');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (31300, '2022/08/12', '2023/08/10');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (26277, '2022/10/08', '2023/10/05');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14853, '2022/03/09', '2022/03/05');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89355, '2022/07/25', '2022/07/21');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (86296, '2023/03/16', '2022/03/10');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (34519, '2023/02/03', '2023/02/02');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734, '2022/05/20', '2023/05/15');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
+
