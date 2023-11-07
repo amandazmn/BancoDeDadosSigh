@@ -292,7 +292,7 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (33210,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (72549, '2022/04/18', '2023/04/16');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (67875, '2022/09/01', '2022/08/27');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (56426, '2022/12/08', '2022/12/06');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (10693, '2022/08/37', '2022/08/30');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (10693, '2022/08/02', '2022/08/30');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14828, '2023/01/05', '2022/01/03');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (31300, '2022/08/12', '2023/08/10');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (26277, '2022/10/08', '2023/10/05');
@@ -341,6 +341,16 @@ UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07
 UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
 UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
 UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
+
+
+-- delete quartos Gabriely 
+DELETE FROM quartos WHERE id_quarto = 980;
+DELETE FROM quartos WHERE nummax_hospedes = 8;
+DELETE FROM quartos WHERE preco = '194.75';
+DELETE FROM quartos WHERE num_cama-casal = 9;
+DELETE FROM quartos WHERE num_cama_solteiro = 5;
+
+
 
 
 
