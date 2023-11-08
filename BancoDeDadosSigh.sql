@@ -233,6 +233,11 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642669, 'California', 'Richmond', 'Suite 39', 'Casa', 6414);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'California', 'Simi Valley', 'Room 240', 'Casa', 2097);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (16648129, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
+-- inserts hospedes
+
+
+-- inserts hospede_hospedagem
+
 
 -- inserts quartos 
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (980, '1', '1', 'SIM', '1', '1', '1', '194.64', 4, 3, 4);
@@ -255,7 +260,6 @@ insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, fr
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (685, '1', '0', 'NÃO', '0', '1', '0', '245.93', 4, 2, 4);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (183, '1', '0', 'NÃO', '0', '1', '0', '108.83', 3, 2, 2);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (533, '0', '1', 'SIM', '1', '0', '1', '194.75', 4, 3, 4);
-
 
 
 -- inserts necessidades_especiais 
@@ -304,7 +308,15 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
 
 
+
 -- select count 
+
+SELECT COUNT(*) FROM enderecos;
+
+SELECT COUNT(*) FROM hospedes;
+
+SELECT COUNT(*) FROM hospede_hospedagem;
+
 SELECT COUNT(*) FROM quartos;
 
 SELECT COUNT(*) FROM necessidades_especiais;
@@ -314,6 +326,8 @@ SELECT COUNT(*) FROM hospedagens ;
 
 
 -- select all
+
+
 SELECT * FROM quartos ORDER BY id_quarto;
 
 SELECT * FROM necessidades_especiais ORDER BY id_necessidade;
