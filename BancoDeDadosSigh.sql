@@ -327,6 +327,11 @@ SELECT COUNT(*) FROM hospedagens ;
 
 -- select all
 
+SELECT * FROM enderecos ORDER BY id_endereco;
+
+SELECT * FROM hospedes ORDER BY id_hospede;
+
+SELECT * FROM hospede_hospedagem ORDER BY id_hospede_hospedagem;
 
 SELECT * FROM quartos ORDER BY id_quarto;
 
