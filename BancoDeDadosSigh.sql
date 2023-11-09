@@ -354,6 +354,19 @@ UPDATE enderecos SET estado = 'Mato Grosso' WHERE estado = 'Minas Gerais';
 UPDATE enderecos SET endereco = 'Ap BA 100' WHERE endereco = 'Apt 1345';
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates hospedes
+SET SQL_SAFE_UPDATES = 0;
+UPDATE hospedes SET id_hospede = 37811811 WHERE id_hospede = 37811813;
+UPDATE hospedes SET sobrenome = 'Klyemen' WHERE sobrenome = 'Kliemann';
+UPDATE hospedes SET email = 'europadg@revernation.com' WHERE email = 'epoupardg@reverbnation.com';
+UPDATE hospedes SET genero = 'Fem' WHERE genero = 'Female';
+UPDATE hospedes SET primeiro_nome = 'Ester' WHERE primeiro_nome = 'Hesther';
+UPDATE hospedes SET nome_social = 'Nicie' WHERE nome_social = 'Nixie';
+UPDATE hospedes SET data_nascimento = '2022-11-11' WHERE data_nascimento = '2022-11-10';
+UPDATE hospedes SET id_responsavel = 37811815 WHERE id_responsavel = 37811813;
+UPDATE hospedes SET cpf = 428628633 WHERE cpf = 418628632;
+UPDATE hospedes SET nacionalidade = 'Brasil' WHERE nacionalidade = 'Brazil';
+SET SQL_SAFE_UPDATES = 1;
 
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
