@@ -213,31 +213,71 @@ ALTER TABLE `departamentos` ADD `id_chefe_departamento` int;
 ALTER TABLE `departamentos` ADD FOREIGN KEY (id_chefe_departamento) REFERENCES `funcionarios` (`id_funcionario`);   
 
 -- inserts enderecos 
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (32146584, 'Geórgia', 'San Jose', 'PO Box 40575', 'Casa', 7253);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654091, 'Santa Catarina', 'Whittier', 'Suite 1', 'Casa', 3768);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (85928123, 'California', 'Palmdale', 'Room 206', 'Casa', 9351);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (75623921, 'Parana', 'San Diego', 'Room 152', 'Casa', 8368);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (11789160, 'São Paulo', 'Whittier', 'PO Box 59348', 'Casa', 8200);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (71654926, 'California', 'Santa Ana', 'PO Box 9725', 'Casa', 8770);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (93728656, 'Rio Grande do Sul', 'Santa Rosa', 'PO Box 92409', 'Casa', 7858);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (67746963, 'Texas', 'Los Angeles', 'PO Box 92328', 'Casa', 3735);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (19460487, 'Flórida', 'Van Nuys', 'PO Box 65611', 'Casa', 8670);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (77939486, 'California', 'Fresno', '2nd Floor', 'Casa', 6076);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (91175224, 'Rio de Janeiro', 'Corona', '3rd Floor', 'Casa', 9156);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (52528621, 'Rio de Janeiro', 'Santa Cruz', 'Apt 1345', 'Casa', 9909);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (49836154, 'California', 'Long Beach', 'Apt 1009', 'Casa', 7464);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (89202607, 'São Paulo', 'Garden Grove', '9th Floor', 'Casa', 9056);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (36645029, 'São Paulo', 'San Rafael', 'PO Box 18784', 'Casa', 8144);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (87310992, 'Minas Gerais', 'Garden Grove', 'Suite 22', 'Casa', 5413);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (5103495, 'Colorado', 'Santa Barbara', 'Suite 8', 'Casa', 8627);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642669, 'Havaí', 'Richmond', 'Suite 39', 'Casa', 6414);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (3202746, 'Virgínia', 'Simi Valley', 'Room 240', 'Casa', 2097);
-insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (16648129, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (321, 'Geórgia', 'San Jose', 'PO Box 40575', 'Casa', 7253);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (716, 'Santa Catarina', 'Whittier', 'Suite 1', 'Casa', 3768);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (859, 'California', 'Palmdale', 'Room 206', 'Casa', 9351);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (756, 'Parana', 'San Diego', 'Room 152', 'Casa', 8368);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (117, 'São Paulo', 'Whittier', 'PO Box 59348', 'Casa', 8200);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (710, 'California', 'Santa Ana', 'PO Box 9725', 'Casa', 8770);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (937, 'Rio Grande do Sul', 'Santa Rosa', 'PO Box 92409', 'Casa', 7858);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (677, 'Texas', 'Los Angeles', 'PO Box 92328', 'Casa', 3735);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (194, 'Flórida', 'Van Nuys', 'PO Box 65611', 'Casa', 8670);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (779, 'California', 'Fresno', '2nd Floor', 'Casa', 6076);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (911, 'Rio de Janeiro', 'Corona', '3rd Floor', 'Casa', 9156);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (525, 'Rio de Janeiro', 'Santa Cruz', 'Apt 1345', 'Casa', 9909);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (498, 'California', 'Long Beach', 'Apt 1009', 'Casa', 7464);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (892, 'São Paulo', 'Garden Grove', '9th Floor', 'Casa', 9056);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (366, 'São Paulo', 'San Rafael', 'PO Box 18784', 'Casa', 8144);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (873, 'Minas Gerais', 'Garden Grove', 'Suite 22', 'Casa', 5413);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (510, 'Colorado', 'Santa Barbara', 'Suite 8', 'Casa', 8627);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (642, 'Havaí', 'Richmond', 'Suite 39', 'Casa', 6414);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (324, 'Virgínia', 'Simi Valley', 'Room 240', 'Casa', 2097);
+insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (166, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
 
 -- inserts hospedes
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (1, 'Bee', 'Wetter', 'Phyllys', 'Female', '2022-11-10', 'United States', 450363329, 'us038789', 'pwetter0@irs.gov', 477748784, 321, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (2, 'Josefina', 'Canby', 'Wyn', 'Genderfluid', '2023-02-25', 'Brazil', 875492836, 'ws637030', 'wcanby1@exblog.jp', 085921159, 716, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (3, 'Addie', 'Garretts', 'Del', 'Female', '2023-01-14', 'Canada', 552996495, 'hg403564', 'dgarretts2@vk.com', 732425848, 859, 1);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (4, 'Hesther', 'Meletti', 'Gilles', 'Genderqueer', '2023-02-08', 'Dominican Republic', 036594392, 'kl267763', 'gmeletti3@indiatimes.com', 368262143, 756, 2);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (5, 'Aldwin', 'Peltzer', 'Abbe', 'Male', '2023-05-07', 'Canada', 324687718, 'ki635763', 'apeltzer4@ebay.com', 489161905, 117, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (6, 'Israel', 'Trotman', 'Janina', 'Genderfluid', '2023-05-02', 'United States', 698814385, 'lo316878', 'jtrotman5@mlb.com', 450432754, 710, 5);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (7, 'Fredra', 'Kliemann', 'Lorianne', 'Female', '2023-04-24', 'Brazil', 581063453, 'hu895685', 'lkliemann6@sun.com', 189156511, 937, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (8, 'Zitella', 'Masarrat', 'Sylvia', 'Female', '2022-09-12', 'Brazil', 511874202, 'mk667060', 'smasarrat7@umich.edu', 891477005, 677, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (9, 'Byram', 'Turland', 'Georgia', 'Polygender', '2022-06-28', 'Germany', 132364595, 'ki645682', 'gturland8@mozilla.com', 864143915, 194, 7);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (10, 'Hildagard', 'Blethin', 'Leontine', 'Female', '2023-02-04', 'Portugal', 274895374, 'ol172005', 'lblethin9@bbb.org', 965583221, 779, 8);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (11, 'Berkley', 'Fishlee', 'Stillmann', 'Male', '2023-02-01', 'Brazil', 896846771, 'ft089792', 'sfishleea@tuttocitta.it', 716970713, 911, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (12, 'Dukey', 'Craigs', 'Early', 'Male', '2022-06-03', 'Brazil', 418376975, 'gt874996', 'ecraigsb@pinterest.com', 329735772, 525, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (13, 'Carolyne', 'Hrishchenko', 'Alene', 'Female', '2023-02-12', 'Brazil', 317234416,'ji598213', 'ahrishchenkoc@hp.com', 832475583, 498, 11);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (14, 'Arabel', 'Heugle', 'Nixie', 'Female', '2023-11-06', 'United States', 638404550, 'ko401110', 'nheugled@sakura.ne.jp', 649333207, 892, 12);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (15, 'Kayley', 'Cawsy', 'Annecorinne', 'Female', '2023-02-07', 'Germany', 520304363, 'ki985030', 'acawsye@prlog.org', 288564037, 366, 12);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (16, 'Carmella', 'Houliston', 'Karilynn', 'Female', '2023-06-03', 'Portugal', 418628632, 'ju270959', 'khoulistonf@foxnews.com', 121032215, 873, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (17, 'Fabian', 'Poupard', 'Ervin', 'Male', '2023-06-03', 'Brazil', 745065736, 'hu319453', 'epoupardg@reverbnation.com', 796711112, 510, 16);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (18, 'Alexandra', 'Rochelle', 'Caye', 'Female', '2023-09-10', 'Uruguay', 360582163, 'dr428661', 'crochelleh@wsj.com', 319674200, 642, null);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (19, 'Aundrea', 'Bonicelli', 'Nicole', 'Female', '2023-12-03', 'Portugal', 873361330, 'sw043537', 'nbonicellii@ask.com', 128297256, 324, 18);
+insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (20, 'Quinlan', 'Tregensoe', 'Clayborn', 'Male', '2023-05-19', 'Brazil', 764965966, 'se327774', 'ctregensoej@mac.com', 519622918, 166, null);
 
 
 -- inserts hospede_hospedagem
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (361, 60675, 1, 980);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (692, 90243, 2, 378);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (523, 43481, 3, 554);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (114, 89929, 4, 178);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (525, 59521, 5, 869);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (644, 35170, 6, 278);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (752, 33210, 7, 924);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (258, 72549, 8, 894);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (359, 67875, 9, 609);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (120, 56426, 10, 606);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (111, 10693, 11, 681);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (312, 14828, 12, 857);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (613, 31300, 13, 610);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (441, 26277, 14, 301);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (336, 14853, 15, 978);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (390, 89355, 16, 129);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (264, 86296, 17, 864);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (945, 34519, 18, 685);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (208, 30734, 19, 183);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (438, 74872, 20, 533);
 
 
 -- inserts quartos 
@@ -342,7 +382,7 @@ SELECT * FROM hospedagens ORDER BY id_hospedagem;
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
-UPDATE enderecos SET id_endereco = 32146583 WHERE id_endereco = 32146584;
+UPDATE enderecos SET id_endereco = 322 WHERE id_endereco = 321;
 UPDATE enderecos SET estado = 'California' WHERE estado = 'Geórgia';
 UPDATE enderecos SET cidade = 'Rio Preto' WHERE cidade = 'San Jose';
 UPDATE enderecos SET endereco = 'Ap 100' WHERE endereco = 'PO Box 40575';
@@ -354,32 +394,34 @@ UPDATE enderecos SET estado = 'Mato Grosso' WHERE estado = 'Minas Gerais';
 UPDATE enderecos SET endereco = 'Ap BA 100' WHERE endereco = 'Apt 1345';
 SET SQL_SAFE_UPDATES = 1;
 
+
 -- updates hospedes
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospedes SET id_hospede = 37811811 WHERE id_hospede = 37811813;
+UPDATE hospedes SET id_hospede = 2 WHERE id_hospede = 1;
 UPDATE hospedes SET sobrenome = 'Klyemen' WHERE sobrenome = 'Kliemann';
 UPDATE hospedes SET email = 'europadg@revernation.com' WHERE email = 'epoupardg@reverbnation.com';
 UPDATE hospedes SET genero = 'Fem' WHERE genero = 'Female';
 UPDATE hospedes SET primeiro_nome = 'Ester' WHERE primeiro_nome = 'Hesther';
 UPDATE hospedes SET nome_social = 'Nicie' WHERE nome_social = 'Nixie';
 UPDATE hospedes SET data_nascimento = '2022-11-11' WHERE data_nascimento = '2022-11-10';
-UPDATE hospedes SET id_responsavel = 37811815 WHERE id_responsavel = 37811813;
+UPDATE hospedes SET id_responsavel = 3 WHERE id_responsavel = 2;
 UPDATE hospedes SET cpf = 428628633 WHERE cpf = 418628632;
 UPDATE hospedes SET nacionalidade = 'Brasil' WHERE nacionalidade = 'Brazil';
 SET SQL_SAFE_UPDATES = 1;
 
+
 -- updates hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 57948216 WHERE id_hospede_hospedagem = 57948115;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 521 WHERE id_hospede_hospedagem = 523;
 UPDATE hospede_hospedagem SET id_hospedagem = 26070 WHERE id_hospedagem = 35170;
-UPDATE hospede_hospedagem SET id_hospede = 95912333 WHERE id_hospede = 95912888;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 39026226 WHERE id_hospede_hospedagem = 39026336;
+UPDATE hospede_hospedagem SET id_hospede = 3 WHERE id_hospede = 9;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 211 WHERE id_hospede_hospedagem = 111;
 UPDATE hospede_hospedagem SET id_quarto = 553 WHERE id_quarto = 533;
 UPDATE hospede_hospedagem SET id_quarto = 222 WHERE id_quarto = 864;
 UPDATE hospede_hospedagem SET id_quarto = 849 WHERE id_quarto = 978;
 UPDATE hospede_hospedagem SET id_hospedagem = 26399 WHERE id_hospedagem = 26277;
 UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 89540783 WHERE id_hospede_hospedagem = 11110783;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 428 WHERE id_hospede_hospedagem = 438;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates quartos 
@@ -435,18 +477,27 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- delete hospedes
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM hospedes WHERE id_hospede = 37811813;
+DELETE FROM enderecos WHERE id_endereco = 321;
+DELETE FROM enderecos WHERE estado = 'Geórgia';
+DELETE FROM enderecos WHERE cidade = 'San Jose';
+DELETE FROM enderecos WHERE endereco = 'PO Box 40575';
+DELETE FROM enderecos WHERE complemento = 'Casa';
+SET SQL_SAFE_UPDATES = 1;
+
+-- delete hospedes
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM hospedes WHERE id_hospede = 1;
 DELETE FROM hospedes WHERE primeiro_nome = 'Bee';
 DELETE FROM hospedes WHERE sobrenome = 'Wetter';
 DELETE FROM hospedes WHERE genero = 'Female';
-DELETE FROM hospedes WHERE data_nascimento = '2022-11-10';
+DELETE FROM hospedes WHERE data_nasciemento = '2022-11-10';
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM hospede_hospedagem WHERE id_hospede_hospedagem = 37811813;
+DELETE FROM hospede_hospedagem WHERE id_hospede_hospedagem = 361;
 DELETE FROM hospede_hospedagem WHERE id_hospedagem = 60675;
-DELETE FROM hospede_hospedagem WHERE id_hospede = 58551634;
+DELETE FROM hospede_hospedagem WHERE id_hospede = 1;
 DELETE FROM hospede_hospedagem WHERE id_quarto = 980;
 DELETE FROM hospede_hospedagem WHERE id_quarto = 533;
 SET SQL_SAFE_UPDATES = 1;
