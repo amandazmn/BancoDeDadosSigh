@@ -368,6 +368,20 @@ UPDATE hospedes SET cpf = 428628633 WHERE cpf = 418628632;
 UPDATE hospedes SET nacionalidade = 'Brasil' WHERE nacionalidade = 'Brazil';
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates hospede_hospedagem
+SET SQL_SAFE_UPDATES = 0;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 57948216 WHERE id_hospede_hospedagem = 57948115;
+UPDATE hospede_hospedagem SET id_hospedagem = 26070 WHERE id_hospedagem = 35170;
+UPDATE hospede_hospedagem SET id_hospede = 95912333 WHERE id_hospede = 95912888;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 39026226 WHERE id_hospede_hospedagem = 39026336;
+UPDATE hospede_hospedagem SET id_quarto = 553 WHERE id_quarto = 533;
+UPDATE hospede_hospedagem SET id_quarto = 222 WHERE id_quarto = 864;
+UPDATE hospede_hospedagem SET id_quarto = 849 WHERE id_quarto = 978;
+UPDATE hospede_hospedagem SET id_hospedagem = 26399 WHERE id_hospedagem = 26277;
+UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 89540783 WHERE id_hospede_hospedagem = 11110783;
+SET SQL_SAFE_UPDATES = 1;
+
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
