@@ -258,26 +258,26 @@ insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero,
 
 
 -- inserts hospede_hospedagem
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (361, 60675, 1, 980);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (692, 90243, 2, 378);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (523, 43481, 3, 554);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (114, 89929, 4, 178);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (525, 59521, 5, 869);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (644, 35170, 6, 278);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (752, 33210, 7, 924);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (258, 72549, 8, 894);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (359, 67875, 9, 609);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (120, 56426, 10, 606);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (111, 10693, 11, 681);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (312, 14828, 12, 857);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (613, 31300, 13, 610);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (441, 26277, 14, 301);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (336, 14853, 15, 978);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (390, 89355, 16, 129);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (264, 86296, 17, 864);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (945, 34519, 18, 685);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (208, 30734, 19, 183);
-insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (438, 74872, 20, 533);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (1, 60675, 1, 980);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (2, 90243, 2, 378);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (3, 43481, 3, 554);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (4, 89929, 4, 178);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (5, 59521, 5, 869);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (6, 35170, 6, 278);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (7, 33210, 7, 924);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (8, 72549, 8, 894);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (9, 67875, 9, 609);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (10, 56426, 10, 606);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (11, 10693, 11, 681);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (12, 14828, 12, 857);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (13, 31300, 13, 610);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (14, 26277, 14, 301);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (15, 14853, 15, 978);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (16, 89355, 16, 129);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (17, 86296, 17, 864);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (18, 34519, 18, 685);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (19, 30734, 19, 183);
+insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (20, 74872, 20, 533);
 
 
 -- inserts quartos 
@@ -412,16 +412,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 521 WHERE id_hospede_hospedagem = 523;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 2 WHERE id_hospede_hospedagem = 3;
 UPDATE hospede_hospedagem SET id_hospedagem = 26070 WHERE id_hospedagem = 35170;
 UPDATE hospede_hospedagem SET id_hospede = 3 WHERE id_hospede = 9;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 211 WHERE id_hospede_hospedagem = 111;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 1 WHERE id_hospede_hospedagem = 11;
 UPDATE hospede_hospedagem SET id_quarto = 553 WHERE id_quarto = 533;
 UPDATE hospede_hospedagem SET id_quarto = 222 WHERE id_quarto = 864;
 UPDATE hospede_hospedagem SET id_quarto = 849 WHERE id_quarto = 978;
 UPDATE hospede_hospedagem SET id_hospedagem = 26399 WHERE id_hospedagem = 26277;
 UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 428 WHERE id_hospede_hospedagem = 438;
+UPDATE hospede_hospedagem SET id_hospede_hospedagem = 6 WHERE id_hospede_hospedagem = 7;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates quartos 
@@ -468,15 +468,6 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM enderecos WHERE id_endereco = 32146584;
-DELETE FROM enderecos WHERE estado = 'Geórgia';
-DELETE FROM enderecos WHERE cidade = 'San Jose';
-DELETE FROM enderecos WHERE endereco = 'PO Box 40575';
-DELETE FROM enderecos WHERE complemento = 'Casa';
-SET SQL_SAFE_UPDATES = 1;
-
--- delete hospedes
-SET SQL_SAFE_UPDATES = 0;
 DELETE FROM enderecos WHERE id_endereco = 321;
 DELETE FROM enderecos WHERE estado = 'Geórgia';
 DELETE FROM enderecos WHERE cidade = 'San Jose';
@@ -495,7 +486,7 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- delete hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM hospede_hospedagem WHERE id_hospede_hospedagem = 361;
+DELETE FROM hospede_hospedagem WHERE id_hospede_hospedagem = 6;
 DELETE FROM hospede_hospedagem WHERE id_hospedagem = 60675;
 DELETE FROM hospede_hospedagem WHERE id_hospede = 1;
 DELETE FROM hospede_hospedagem WHERE id_quarto = 980;
