@@ -439,7 +439,16 @@ DELETE FROM hospedes WHERE id_hospede = 37811813;
 DELETE FROM hospedes WHERE primeiro_nome = 'Bee';
 DELETE FROM hospedes WHERE sobrenome = 'Wetter';
 DELETE FROM hospedes WHERE genero = 'Female';
-DELETE FROM hospedes WHERE data_nasciemento = '2022-11-10';
+DELETE FROM hospedes WHERE data_nascimento = '2022-11-10';
+SET SQL_SAFE_UPDATES = 1;
+
+-- delete hospede_hospedagem
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM hospede_hospedagem WHERE id_hospede_hospedagem = 37811813;
+DELETE FROM hospede_hospedagem WHERE id_hospedagem = 60675;
+DELETE FROM hospede_hospedagem WHERE id_hospede = 58551634;
+DELETE FROM hospede_hospedagem WHERE id_quarto = 980;
+DELETE FROM hospede_hospedagem WHERE id_quarto = 533;
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete quartos
@@ -450,7 +459,6 @@ DELETE FROM quartos WHERE preco = '194.75';
 DELETE FROM quartos WHERE num_cama_casal = 9;
 DELETE FROM quartos WHERE num_cama_solteiro = 5;
 SET SQL_SAFE_UPDATES = 1;
-
 
 -- delete necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
