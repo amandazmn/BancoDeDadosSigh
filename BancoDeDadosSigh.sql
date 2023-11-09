@@ -433,6 +433,15 @@ DELETE FROM enderecos WHERE endereco = 'PO Box 40575';
 DELETE FROM enderecos WHERE complemento = 'Casa';
 SET SQL_SAFE_UPDATES = 1;
 
+-- delete hospedes
+SET SQL_SAFE_UPDATES = 0;
+DELETE FROM hospedes WHERE id_hospede = 37811813;
+DELETE FROM hospedes WHERE primeiro_nome = 'Bee';
+DELETE FROM hospedes WHERE sobrenome = 'Wetter';
+DELETE FROM hospedes WHERE genero = 'Female';
+DELETE FROM hospedes WHERE data_nasciemento = '2022-11-10';
+SET SQL_SAFE_UPDATES = 1;
+
 -- delete quartos
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM quartos WHERE id_quarto = 980;
