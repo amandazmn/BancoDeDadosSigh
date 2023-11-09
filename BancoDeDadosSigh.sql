@@ -340,6 +340,19 @@ SELECT * FROM necessidades_especiais ORDER BY id_necessidade;
 
 SELECT * FROM hospedagens ORDER BY id_hospedagem;
 
+-- updates enderecos
+SET SQL_SAFE_UPDATES = 0;
+UPDATE enderecos SET id_endereco = 32146583 WHERE id_endereco = 32146584;
+UPDATE enderecos SET estado = 'California' WHERE estado = 'Geórgia';
+UPDATE enderecos SET cidade = 'Rio Preto' WHERE cidade = 'San Jose';
+UPDATE enderecos SET endereco = 'Ap 100' WHERE endereco = 'PO Box 40575';
+UPDATE enderecos SET complemento = 'casa' WHERE complemento = 'Casa';
+UPDATE enderecos SET numero = 7345 WHERE numero = 7253;
+UPDATE enderecos SET cidade = 'Santa Clara' WHERE cidade = 'Santa Ana';
+UPDATE enderecos SET id_endereco = 11789145 WHERE id_endereco = 11789160;
+UPDATE enderecos SET estado = 'Mato Grosso' WHERE estado = 'Minas Gerais';
+UPDATE enderecos SET endereco = 'Ap BA 100' WHERE endereco = 'Apt 1345';
+SET SQL_SAFE_UPDATES = 1;
 
 
 -- updates quartos 
