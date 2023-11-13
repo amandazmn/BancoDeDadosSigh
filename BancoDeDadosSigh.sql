@@ -403,6 +403,12 @@ insert into cargos (id_cargo, nome_cargo, id_departamento) values (122, 'Camarei
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (133, 'Manutentor', 13);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (144, 'Recepcionista', 14);
 
+-- inserts funcionarios
+insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5318, 'Loella', 'Clara', '', 'wclara0@skyrock.com', 111, 17143);
+insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (4342, 'Halimeda', 'Rase', '', 'erase1@privacy.gov.au', 122, 54005);
+insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5324, 'Faina', 'Hullins', 'Meredeth', 'mhullins2@timesonline.co.uk', 133, 33727);
+insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (4546, 'Ruthann', 'Housbie', 'Carla', 'whousbie3@senate.gov', 144, 38210);
+
 -- select count 
 
 SELECT COUNT(*) FROM enderecos;
