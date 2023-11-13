@@ -153,7 +153,7 @@ CREATE TABLE IF NOT EXISTS   `necessidades_hospede` (
   PRIMARY KEY (`id_necessidade_hospede`),
   CONSTRAINT `fk_hospedes_has_necessidades_especiais_hospedes1`
     FOREIGN KEY (`id_hospede`)
-    REFERENCES   `hospedes` (`id_endereco`),
+    REFERENCES   `hospedes` (`id_hospede`),
   CONSTRAINT `fk_hospedes_has_necessidades_especiais_necessidades_especiais1`
     FOREIGN KEY (`id_necessidade`)
     REFERENCES   `necessidades_especiais` (`id_necessidade`));
@@ -344,6 +344,31 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (19, 'Hemiplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
 
+
+
+
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (20, 1, 1);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (19, 2, 2);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (18, 3, 3);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (17, 4, 4);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (16, 5, 5);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (15, 6, 6);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (14, 7, 7);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (13, 8, 8);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (12, 9, 9);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (11, 10, 10);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (10, 11, 11);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (9, 12, 12);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (8, 13, 13);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (7, 14, 14);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (6, 15, 15);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (5, 16, 16);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (4, 17, 17);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (3, 18, 18);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (2, 19, 19);
+insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (1, 20, 20);
+
+
 -- select count 
 
 SELECT COUNT(*) FROM enderecos;
@@ -512,9 +537,3 @@ DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
 DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
 DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
 SET SQL_SAFE_UPDATES = 1;
-<<<<<<< Updated upstream
-=======
-h
-
-
->>>>>>> Stashed changes
