@@ -585,6 +585,20 @@ UPDATE cargos SET id_departamento = 09 WHERE id_departamento = 12;
 UPDATE cargos SET id_departamento = 39 WHERE id_departamento = 13; 
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates funcionarios
+SET SQL_SAFE_UPDATES = 0;
+UPDATE funcionarios SET primeiro_nome = 'Lara' WHERE primeiro_nome = 'Loella';
+UPDATE funcionarios SET email = 'pereira0@skyrock.com' WHERE email = 'wclara0@skyrock.com';
+UPDATE funcionarios SET id_usuario = 59843 WHERE id_usuario = 17143;
+UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE primeiro_nome = 'Halimeda';
+UPDATE funcionarios SET sobrenome = 'Rech' WHERE sobrenome = 'Rase';
+UPDATE funcionarios SET primeiro_nome = 'Julio' WHERE primeiro_nome = 'Faina';
+UPDATE funcionarios SET id_cargo  = 133 WHERE id_cargo = 144;
+UPDATE funcionarios SET email = 'theerastour@privacy.gov.au' WHERE email = 'erase1@privacy.gov.au';
+UPDATE funcionarios SET email = 'hamilda2@timesonline.co.uk' WHERE email = 'mhullins2@timesonline.co.uk';
+UPDATE funcionarios SET sobrenome = 'Will' WHERE sobrenome = 'Hullins'; 
+SET SQL_SAFE_UPDATES = 1;
+
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM enderecos WHERE id_endereco = 321;
