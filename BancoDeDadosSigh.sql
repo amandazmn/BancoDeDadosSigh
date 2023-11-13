@@ -397,6 +397,7 @@ insert into departamentos (id_departamento, nome_departamento, id_chef_departame
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (13, 'Manutenção', 3);
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (14, 'Recepção', 4);
 
+-- inserts cargos
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (111, 'Cozinheiro', 11);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (122, 'Camareira', 12);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (133, 'Manutentor', 13);
