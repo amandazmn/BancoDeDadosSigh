@@ -558,6 +558,19 @@ UPDATE departamentos SET id_departamento = 25 WHERE id_departamento = 14;
 SET SQL_SAFE_UPDATES = 1;
 
 
+SET SQL_SAFE_UPDATES = 0;
+UPDATE usuarios_senhas SET id_usuario = 21765 WHERE id_usuario = 17143;
+UPDATE usuarios_senhas SET senha = 'h46fjhwk' WHERE senha = 'cK5<bsN\s6v.<Q';
+UPDATE usuarios_senhas SET id_usuario = 59876 WHERE id_usuario = 54005;
+UPDATE usuarios_senhas SET senha = 'aj534dtr' WHERE senha = 'bL6.?8O6"4/';
+UPDATE usuarios_senhas SET id_usuario = 23412 WHERE id_usuario = 33727;
+UPDATE usuarios_senhas SET senha = 'shdncgft' WHERE senha = 'kQ4>5ILf';
+UPDATE usuarios_senhas SET id_usuario  = 54327 WHERE id_usuario = 38210;
+UPDATE usuarios_senhas SET senha = 'mcg45wge' WHERE senha = 'lO0"ISW/ild';
+UPDATE usuarios_senhas SET id_usuario = 09541 WHERE id_usuario = 32441;
+UPDATE usuarios_senhas SET senha = 'msnch39t' WHERE senha = 'eZ7.v~!v'; 
+SET SQL_SAFE_UPDATES = 1;
+
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM enderecos WHERE id_endereco = 321;
