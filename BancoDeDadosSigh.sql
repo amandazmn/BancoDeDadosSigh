@@ -557,7 +557,7 @@ UPDATE departamentos SET id_chef_departamento = 9 WHERE id_chef_departamento = 3
 UPDATE departamentos SET id_departamento = 25 WHERE id_departamento = 14; 
 SET SQL_SAFE_UPDATES = 1;
 
-
+-- updates usuarios_senhas
 SET SQL_SAFE_UPDATES = 0;
 UPDATE usuarios_senhas SET id_usuario = 21765 WHERE id_usuario = 17143;
 UPDATE usuarios_senhas SET senha = 'h46fjhwk' WHERE senha = 'cK5<bsN\s6v.<Q';
@@ -569,6 +569,20 @@ UPDATE usuarios_senhas SET id_usuario  = 54327 WHERE id_usuario = 38210;
 UPDATE usuarios_senhas SET senha = 'mcg45wge' WHERE senha = 'lO0"ISW/ild';
 UPDATE usuarios_senhas SET id_usuario = 09541 WHERE id_usuario = 32441;
 UPDATE usuarios_senhas SET senha = 'msnch39t' WHERE senha = 'eZ7.v~!v'; 
+SET SQL_SAFE_UPDATES = 1;
+
+-- updates cargos
+SET SQL_SAFE_UPDATES = 0;
+UPDATE cargos SET id_cargo = 217 WHERE id_cargo = 111;
+UPDATE cargos SET nome_cargo = 'Cozinhara' WHERE nome_cargo = 'Cozinheiro';
+UPDATE cargos SET id_cargo = 598 WHERE id_cargo = 122;
+UPDATE cargos SET nome_cargo = 'Faxineira' WHERE nome_cargo = 'Camareira';
+UPDATE cargos SET id_departamento = 23 WHERE id_departamento = 11;
+UPDATE cargos SET nome_cargo = 'Mecanico' WHERE nome_cargo = 'Manutentor';
+UPDATE cargos SET id_cargo  = 543 WHERE id_cargo = 133;
+UPDATE cargos SET nome_cargo = 'Ajudar' WHERE nome_cargo = 'Recepcionista';
+UPDATE cargos SET id_departamento = 09 WHERE id_departamento = 12;
+UPDATE cargos SET id_departamento = 39 WHERE id_departamento = 13; 
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete enderecos
