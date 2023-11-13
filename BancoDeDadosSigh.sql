@@ -113,7 +113,7 @@ CREATE TABLE IF NOT EXISTS   `hospede_hospedagem` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS   `departamentos` (
   `id_departamento` INT NOT NULL,
-  `nome_departamernto` VARCHAR(45) NOT NULL,
+  `nome_departamernto` VARCHAR(45) NOT NULL, 
   PRIMARY KEY (`id_departamento`));
 
 -- -----------------------------------------------------
@@ -179,7 +179,6 @@ CREATE TABLE IF NOT EXISTS   `cargos` (
 CREATE TABLE IF NOT EXISTS   `usuarios_senhas` (
   `id_usuario` INT NOT NULL,
   `senha` VARCHAR(45) NOT NULL,
-  `tipo_acesso` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id_usuario`));
   
 -- -----------------------------------------------------
@@ -345,7 +344,6 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (19, 'Hemiplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
 
-
 -- select count 
 
 SELECT COUNT(*) FROM enderecos;
@@ -359,7 +357,6 @@ SELECT COUNT(*) FROM quartos;
 SELECT COUNT(*) FROM necessidades_especiais;
 
 SELECT COUNT(*) FROM hospedagens ;
-
 
 
 -- select all
@@ -378,7 +375,7 @@ SELECT * FROM hospedagens ORDER BY id_hospedagem;
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
-UPDATE enderecos SET id_endereco = 322 WHERE id_endereco = 321;
+UPDATE enderecos SET id_endereco = 302 WHERE id_endereco = 321;
 UPDATE enderecos SET estado = 'California' WHERE estado = 'Geórgia';
 UPDATE enderecos SET cidade = 'Rio Preto' WHERE cidade = 'San Jose';
 UPDATE enderecos SET endereco = 'Ap 100' WHERE endereco = 'PO Box 40575';
@@ -405,6 +402,33 @@ UPDATE hospedes SET cpf = 428628633 WHERE cpf = 418628632;
 UPDATE hospedes SET nacionalidade = 'Brasil' WHERE nacionalidade = 'Brazil';
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates quartos 
+SET SQL_SAFE_UPDATES = 0;
+UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
+UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
+UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
+UPDATE quartos SET preco = 200.00 WHERE preco = 194.64;
+UPDATE quartos SET id_quarto = 766 WHERE id_quarto = 980;
+UPDATE quartos SET id_quarto = 179 WHERE num_cama_casal = 178;
+UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
+UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
+UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
+UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
+SET SQL_SAFE_UPDATES = 1;
+
+-- updates hospedagens 
+SET SQL_SAFE_UPDATES = 0;
+UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
+UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
+UPDATE hospedagens SET data_saida = '2023/08/26' WHERE data_saida = '2023/08/27';
+UPDATE hospedagens SET id_hospedagem = 74873 WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET id_hospedagem = 31308 WHERE id_hospedagem = 31300;
+UPDATE hospedagens SET id_hospedagem = 73451 WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07/21';
+UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
+UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
+UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
+SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
@@ -420,20 +444,6 @@ UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
 UPDATE hospede_hospedagem SET id_hospede_hospedagem = 6 WHERE id_hospede_hospedagem = 7;
 SET SQL_SAFE_UPDATES = 1;
 
--- updates quartos 
-SET SQL_SAFE_UPDATES = 0;
-UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
-UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
-UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
-UPDATE quartos SET preco = 200.00 WHERE preco = 194.64;
-UPDATE quartos SET id_quarto = 766 WHERE id_quarto = 980;
-UPDATE quartos SET id_quarto = 179 WHERE num_cama_casal = 178;
-UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
-UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
-UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
-UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
-SET SQL_SAFE_UPDATES = 1;
-
 -- updates necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
 UPDATE necessidades_especiais SET id_necessidade = 21 WHERE id_necessidade = 1;
@@ -446,20 +456,6 @@ UPDATE necessidades_especiais SET id_necessidade = 24 WHERE id_necessidade = 8;
 UPDATE necessidades_especiais SET necessidade_especial= 'Alergia á medicamento Talidomida' WHERE necessidade_especial = 'Talidomia';
 UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
 UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
-SET SQL_SAFE_UPDATES = 1;
-
--- updates hospedagens 
-SET SQL_SAFE_UPDATES = 0;
-UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
-UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
-UPDATE hospedagens SET data_saida = '2023/08/26' WHERE data_saida = '2023/08/27';
-UPDATE hospedagens SET id_hospedagem = 74873 WHERE id_hospedagem = 74872;
-UPDATE hospedagens SET id_hospedagem = 31308 WHERE id_hospedagem = 31300;
-UPDATE hospedagens SET id_hospedagem = 73451 WHERE id_hospedagem = 86296;
-UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07/21';
-UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
-UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
-UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete enderecos
@@ -516,5 +512,3 @@ DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
 DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
 DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
 SET SQL_SAFE_UPDATES = 1;
-
-
