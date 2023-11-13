@@ -425,6 +425,14 @@ SELECT COUNT(*) FROM hospedagens ;
 
 SELECT COUNT(*) FROM necessidades_hospede; 
 
+SELECT COUNT(*) FROM usuarios_senhas;
+
+SELECT COUNT(*) FROM departamentos;
+
+SELECT COUNT(*) FROM cargos;
+
+SELECT COUNT(*) FROM funcionarios;
+
 
 -- select all
 
@@ -441,6 +449,14 @@ SELECT * FROM necessidades_especiais ORDER BY id_necessidade;
 SELECT * FROM hospedagens ORDER BY id_hospedagem;
 
 SELECT * FROM necessidades_hospede ORDER BY id_necessidade_hospede; 
+
+SELECT * FROM usuarios_senhas ORDER BY id_usuario;
+
+SELECT * FROM departamentos ORDER BY id_departamento;
+
+SELECT * FROM cargos ORDER BY id_cargo;
+
+SELECT * FROM funcionarios ORDER BY id_funcionario;
 
 
 -- updates enderecos
