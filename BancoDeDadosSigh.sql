@@ -543,6 +543,20 @@ UPDATE  necessidades_hospede SET id_necessidade_hospede = 29 WHERE id_necessidad
 UPDATE  necessidades_hospede SET id_necessidade_hospede = 30 WHERE id_necessidade_hospede = 16;
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates departamentos
+SET SQL_SAFE_UPDATES = 0;
+UPDATE departamentos SET id_departamento = 21 WHERE id_departamento = 11;
+UPDATE departamentos SET nome_departamento = 'Cozinhar' WHERE nome_departamento = 'Cozinha';
+UPDATE departamentos SET id_chef_departamento = 5 WHERE id_chef_departamento = 2;
+UPDATE departamentos SET id_departamento = 31 WHERE id_departamento = 12;
+UPDATE departamentos SET nome_departamento = 'Limpar' WHERE nome_departamento = 'Limpeza';
+UPDATE departamentos SET id_chef_departamento = 7 WHERE id_chef_departamento = 1;
+UPDATE departamentos SET id_departamento  = 18 WHERE id_departamento = 13;
+UPDATE departamentos SET nome_departamento = 'Manuziar' WHERE nome_departamento = 'Manutenção';
+UPDATE departamentos SET id_chef_departamento = 9 WHERE id_chef_departamento = 3;
+UPDATE departamentos SET id_departamento = 25 WHERE id_departamento = 14; 
+SET SQL_SAFE_UPDATES = 1;
+
 
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
