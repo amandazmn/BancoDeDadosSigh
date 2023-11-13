@@ -409,6 +409,30 @@ insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social,
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5324, 'Faina', 'Hullins', 'Meredeth', 'mhullins2@timesonline.co.uk', 133, 33727);
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (4546, 'Ruthann', 'Housbie', 'Carla', 'whousbie3@senate.gov', 144, 38210);
 
+
+-- inser pedidos
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (1, '2023-04-21 11:10:14', 'Porcao Batata frita', 1, 21.67, 1, 1, 1, 60675, 980, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (2, '2023-03-09 04:07:43', 'X-Burguer. 1 sem alface', 2, 71.59, 1, 1, 1, 60675, 980, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (3, '2023-09-28 13:53:43', 'Limpeza completa', 1, 0.0, 1, 1, 1, 74872, 533, 12); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (4, '2023-04-27 14:48:22', 'Milkshake de chocolate', 4, 78.22, 1, 1, 1, 14828, 857, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (5, '2023-10-28 04:02:59', 'Trocar lampadas', 2, 0.0, 0, 0, 1, 67875, 609, 13); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (6, '2023-01-29 02:53:02', 'Trocar roupa de cama', 1, 0.0, 0, 0, 1, 67875, 609, 12); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (7, '2023-03-17 02:22:44', 'Arrumar chuveiro', 1, 0.0, 0, 0, 1, 74872, 533, 13); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (8, '2023-08-25 12:01:25', 'Lasanha', 3, 181.55, 0, 0, 0, 31300, 610, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (9, '2023-09-15 13:26:43', 'Prato do dia', 1, 23.9, 0, 1, 0, 89355, 129, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (10, '2023-01-31 13:09:37', 'Frango parmegiana', 1, 56.28, 1, 1, 1, 89929, 178, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (11, '2023-10-24 13:29:23', 'Arrumar cama quebrada', 1, 0.0, 1, 1, 1, 26277, 301, 13); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (12, '2023-07-18 18:30:17', 'Coca-cola 2l', 1, 15.11, 1, 1, 0, 33210, 924, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (13, '2023-01-14 13:36:52', 'Bolo de chocolate', 2, 134.17, 1, 0, 1, 26277, 301, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (14, '2023-09-06 14:25:35', 'Chocolate quente', 6, 100.77, 1, 1, 0, 89929, 178, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (15, '2023-01-03 03:02:27', 'Misto quente e cafe', 1, 16.78, 0, 1, 1, 56426, 606, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (16, '2023-10-18 11:47:07', 'Prato do dia', 2, 23.9, 0, 0, 0, 33210, 924, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (17, '2023-05-06 13:34:38', 'Limpeza completa', 1, 20.04, 1, 0, 1, 35170, 278, 12); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (18, '2023-07-07 13:01:37', 'Trocar toalhas e roupa de cama', 1, 0.0, 1, 0, 1, 34519, 685, 12); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (19, '2023-09-23 16:18:08', 'Champagne Perrier Jouet Grand Brut 750 ml', 1, 990.5, 1, 1, 1, 86296, 864, 11); 
+insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (20, '2023-01-30 22:43:12', 'Janela quebrada', 2, 0.0, 0, 1, 1, 43481, 554, 13);
+
+
 -- select count 
 
 SELECT COUNT(*) FROM enderecos;
@@ -679,12 +703,3 @@ DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 8;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
 SET SQL_SAFE_UPDATES = 1; 
-
-
-
-
-
-
-
-
-
