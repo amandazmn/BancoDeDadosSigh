@@ -113,7 +113,8 @@ CREATE TABLE IF NOT EXISTS   `hospede_hospedagem` (
 -- -----------------------------------------------------
 CREATE TABLE IF NOT EXISTS   `departamentos` (
   `id_departamento` INT NOT NULL,
-  `nome_departamernto` VARCHAR(45) NOT NULL, 
+  `nome_departamento` VARCHAR(45) NOT NULL, 
+  `id_chef_departamento` INT NOT NULL,
   PRIMARY KEY (`id_departamento`));
 
 -- -----------------------------------------------------
@@ -390,6 +391,10 @@ insert into usuarios_senhas (id_usuario, senha) values (92530, 'xK1+pH\4uLHt+&')
 insert into usuarios_senhas (id_usuario, senha) values (58917, 'uK2$993yYoS0l29');
 insert into usuarios_senhas (id_usuario, senha) values (94575, 'jC6,$jI%t+&');
 
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (11, 'Cozinha', 2);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (12, 'Limpeza', 1);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (13, 'Manutenção', 3);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (14, 'Recepção', 4);
 
 -- select count 
 
