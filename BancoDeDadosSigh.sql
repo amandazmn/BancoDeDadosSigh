@@ -510,6 +510,22 @@ UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
 UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
 SET SQL_SAFE_UPDATES = 1;
 
+
+-- updates necessidades_hospedes
+SET SQL_SAFE_UPDATES = 0;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 21 WHERE id_necessidade_hospede = 7;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 22 WHERE id_necessidade_hospede = 8;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 23 WHERE id_necessidade_hospede = 9;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 24 WHERE id_necessidade_hospede = 10;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 25 WHERE id_necessidade_hospede = 11;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 26 WHERE id_necessidade_hospede = 12;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 27 WHERE id_necessidade_hospede = 13;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 28 WHERE id_necessidade_hospede = 14;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 29 WHERE id_necessidade_hospede = 15;
+UPDATE  necessidades_hospede SET id_necessidade_hospede = 30 WHERE id_necessidade_hospede = 16;
+SET SQL_SAFE_UPDATES = 1;
+
+
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM enderecos WHERE id_endereco = 321;
