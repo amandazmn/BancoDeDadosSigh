@@ -485,16 +485,16 @@ SELECT * FROM funcionarios ORDER BY id_funcionario;
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
-UPDATE enderecos SET id_endereco = 302 WHERE id_endereco = 321;
-UPDATE enderecos SET estado = 'California' WHERE estado = 'Geórgia';
-UPDATE enderecos SET cidade = 'Rio Preto' WHERE cidade = 'San Jose';
-UPDATE enderecos SET endereco = 'Ap 100' WHERE endereco = 'PO Box 40575';
-UPDATE enderecos SET complemento = 'casa' WHERE complemento = 'Casa';
-UPDATE enderecos SET numero = 7345 WHERE numero = 7253;
-UPDATE enderecos SET cidade = 'Santa Clara' WHERE cidade = 'Santa Ana';
-UPDATE enderecos SET id_endereco = 11789145 WHERE id_endereco = 11789160;
-UPDATE enderecos SET estado = 'Mato Grosso' WHERE estado = 'Minas Gerais';
-UPDATE enderecos SET endereco = 'Ap BA 100' WHERE endereco = 'Apt 1345';
+UPDATE enderecos SET estado = 'California', cidade = 'San Jose'  WHERE id_endereco = 321;
+UPDATE enderecos SET estado = 'Santa Catarina', cidade = 'Whittier'  WHERE id_endereco = 716;
+UPDATE enderecos SET complemento = 'Casa', numero = 3735 WHERE id_endereco = 677;
+UPDATE enderecos SET complemento = 'Casa', estado = 'Rio de Janeiro' WHERE id_endereco = 525;
+UPDATE enderecos SET endereco = 'Room 206', cidade = 'Palmdale' WHERE id_endereco = 859;
+UPDATE enderecos SET endereco = '2nd Floor', complemento = 'Casa' WHERE id_endereco = 779;
+UPDATE enderecos SET complemento = 'Casa', estado = 'Havaí' WHERE id_endereco = 642;
+UPDATE enderecos SET endereco = '9th Floor', cidade = 'Garden Grove' WHERE id_endereco = 892;
+UPDATE enderecos SET estado = 'Virgínia', cidade = 'Long Beach' WHERE id_endereco = 324;
+UPDATE enderecos SET cidade = 'Santa Barbara', endereco = 'Suite 8' WHERE id_endereco = 510;
 SET SQL_SAFE_UPDATES = 1;
 
 
