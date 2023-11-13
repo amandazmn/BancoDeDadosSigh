@@ -346,7 +346,7 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 
 
 
-
+-- inserts necessidades_hospede 
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (20, 1, 1);
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (19, 2, 2);
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (18, 3, 3);
@@ -367,6 +367,28 @@ insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessi
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (3, 18, 18);
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (2, 19, 19);
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (1, 20, 20);
+
+-- inserts usuarios_senhas 
+insert into usuarios_senhas (id_usuario, senha) values (17143, 'cK5<bsN\s6v.<Q');
+insert into usuarios_senhas (id_usuario, senha) values (54005, 'bL6.?8O6"4/');
+insert into usuarios_senhas (id_usuario, senha) values (33727, 'kQ4>5ILf');
+insert into usuarios_senhas (id_usuario, senha) values (38210, 'lO0"ISW/ild');
+insert into usuarios_senhas (id_usuario, senha) values (32441, 'eZ7.v~!v');
+insert into usuarios_senhas (id_usuario, senha) values (80531, 'vN8(CQ>nFa9');
+insert into usuarios_senhas (id_usuario, senha) values (36302, 'jQ9!kAL4`d.');
+insert into usuarios_senhas (id_usuario, senha) values (52648, 'hN1)1gAq$4H');
+insert into usuarios_senhas (id_usuario, senha) values (30207, 'mE4!WaRyC@*');
+insert into usuarios_senhas (id_usuario, senha) values (39765, 'jJ1$XkFOEQ');
+insert into usuarios_senhas (id_usuario, senha) values (35799, 'rK1@&|B$M');
+insert into usuarios_senhas (id_usuario, senha) values (25904, 'cA0|y~!1Ldn@JgMK');
+insert into usuarios_senhas (id_usuario, senha) values (45481, 'zG9)fz%)x9"mRJY');
+insert into usuarios_senhas (id_usuario, senha) values (77708, 'rJ4(BI&J');
+insert into usuarios_senhas (id_usuario, senha) values (79905, 'uZ6$h+"b%x');
+insert into usuarios_senhas (id_usuario, senha) values (75458, 'lP8#(rdO59$O5');
+insert into usuarios_senhas (id_usuario, senha) values (71648, 'pP9&\KAK.>y/3eg');
+insert into usuarios_senhas (id_usuario, senha) values (92530, 'xK1+pH\4uLHt+&');
+insert into usuarios_senhas (id_usuario, senha) values (58917, 'uK2$993yYoS0l29');
+insert into usuarios_senhas (id_usuario, senha) values (94575, 'jC6,$jI%t+&');
 
 
 -- select count 
