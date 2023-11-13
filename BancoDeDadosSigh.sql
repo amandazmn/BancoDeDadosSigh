@@ -580,3 +580,22 @@ DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
 DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
 DELETE FROM hospedagens WHERE data_saida = 2022/04/18;
 SET SQL_SAFE_UPDATES = 1;
+
+
+-- delete necessidades_hospede
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 5;
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 18;
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 8;
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
+SET SQL_SAFE_UPDATES = 1; 
+
+
+
+
+
+
+
+
+
