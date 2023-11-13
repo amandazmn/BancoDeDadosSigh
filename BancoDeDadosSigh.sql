@@ -500,16 +500,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospedes
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospedes SET id_hospede = 2 WHERE id_hospede = 1;
-UPDATE hospedes SET sobrenome = 'Klyemen' WHERE sobrenome = 'Kliemann';
-UPDATE hospedes SET email = 'europadg@revernation.com' WHERE email = 'epoupardg@reverbnation.com';
-UPDATE hospedes SET genero = 'Fem' WHERE genero = 'Female';
-UPDATE hospedes SET primeiro_nome = 'Ester' WHERE primeiro_nome = 'Hesther';
-UPDATE hospedes SET nome_social = 'Nicie' WHERE nome_social = 'Nixie';
-UPDATE hospedes SET data_nascimento = '2022-11-11' WHERE data_nascimento = '2022-11-10';
-UPDATE hospedes SET id_responsavel = 3 WHERE id_responsavel = 2;
-UPDATE hospedes SET cpf = 428628633 WHERE cpf = 418628632;
-UPDATE hospedes SET nacionalidade = 'Brasil' WHERE nacionalidade = 'Brazil';
+UPDATE hospedes SET primeiro_nome = 'Bee', sobrenome = 'Wetter' WHERE id_hospede = 1;
+UPDATE hospedes SET sobrenome = 'Kliemann', primeiro_nome = 'Houliston' WHERE id_hospede = 16;
+UPDATE hospedes SET email = 'epoupardg@reverbnation.com', genero = 'Male' WHERE id_hospede = 17;
+UPDATE hospedes SET genero = 'Female', data_nascimento = '2023-02-04' WHERE id_hospede = 10;
+UPDATE hospedes SET primeiro_nome = 'Hesther', cpf = 036594392 WHERE id_hospede = 4;
+UPDATE hospedes SET nome_social = 'Nixie' WHERE id_hospede = 14;
+UPDATE hospedes SET data_nascimento = '2022-11-10', nacionalidade = 'United States' WHERE id_hospede = 1;
+UPDATE hospedes SET id_responsavel = 2 WHERE id_hospede = 4;
+UPDATE hospedes SET cpf = 418628632 WHERE id_hospede = 16;
+UPDATE hospedes SET nacionalidade = 'Brazil', nome_social = 'Stillmann' WHERE id_hospede = 11;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates quartos 
