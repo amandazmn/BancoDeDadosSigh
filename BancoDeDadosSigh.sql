@@ -405,6 +405,8 @@ SELECT COUNT(*) FROM necessidades_especiais;
 
 SELECT COUNT(*) FROM hospedagens ;
 
+SELECT COUNT(*) FROM necessidades_hospede; 
+
 
 -- select all
 
@@ -419,6 +421,9 @@ SELECT * FROM quartos ORDER BY id_quarto;
 SELECT * FROM necessidades_especiais ORDER BY id_necessidade;
 
 SELECT * FROM hospedagens ORDER BY id_hospedagem;
+
+SELECT * FROM necessidades_hospede ORDER BY id_necessidade_hospede; 
+
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
