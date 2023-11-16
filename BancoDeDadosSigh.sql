@@ -514,16 +514,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
-UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 1;
-UPDATE quartos SET num_cama_solteiro = 3 WHERE num_cama_solteiro = 4;
-UPDATE quartos SET nummax_hospedes = 2 WHERE nummax_hospedes = 1;
-UPDATE quartos SET preco = 200.00 WHERE preco = 194.64;
-UPDATE quartos SET id_quarto = 766 WHERE id_quarto = 980;
-UPDATE quartos SET id_quarto = 179 WHERE num_cama_casal = 178;
-UPDATE quartos SET nummax_hospedes  = 1 WHERE nummax_hospedes = 5;
-UPDATE quartos SET num_cama_casal = 2 WHERE num_cama_casal = 9;
-UPDATE quartos SET num_cama_casal = 4 WHERE num_cama_casal = 7;
-UPDATE quartos SET num_cama_solteiro = 2 WHERE num_cama_solteiro = 1; 
+UPDATE quartos SET num_cama_casal = 2 WHERE id_quarto = 980;
+UPDATE quartos SET num_cama_solteiro = 3 WHERE id_quarto = 554;
+UPDATE quartos SET nummax_hospedes = 2 WHERE id_quarto = 857;
+UPDATE quartos SET preco = 200.00 WHERE id_quarto = 894;
+UPDATE quartos SET nummax_hospedes = 3 WHERE id_quarto = 610;
+UPDATE quartos SET num_cama_casal = 1 WHERE id_quarto = 129;
+UPDATE quartos SET nummax_hospedes  = 1 WHERE id_quarto = 378;
+UPDATE quartos SET num_cama_casal = 2 WHERE 278;
+UPDATE quartos SET num_cama_casal = 4 WHERE id_quarto = 301;
+UPDATE quartos SET num_cama_solteiro = 2 WHERE id_quarto = 178; 
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospedagens 
