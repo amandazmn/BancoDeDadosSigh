@@ -528,16 +528,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospedagens 
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospedagens SET data_saida = '2023/10/12' WHERE data_saida = '2023/10/13';
-UPDATE hospedagens SET data_saida = '2022/03/10' WHERE data_saida = '2022/03/09';
-UPDATE hospedagens SET data_saida = '2023/08/26' WHERE data_saida = '2023/08/27';
-UPDATE hospedagens SET id_hospedagem = 74873 WHERE id_hospedagem = 74872;
-UPDATE hospedagens SET id_hospedagem = 31308 WHERE id_hospedagem = 31300;
-UPDATE hospedagens SET id_hospedagem = 73451 WHERE id_hospedagem = 86296;
-UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE data_entrada = '2022/07/21';
-UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE data_entrada = '2022/08/27';
-UPDATE hospedagens SET id_hospedagem = 08284 WHERE id_hospedagem = 59521;
-UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE data_entrada = '2023/08/15';
+UPDATE hospedagens SET data_saida = '2023/10/12' WHERE id_hospedagem = 89355 ;
+UPDATE hospedagens SET data_saida = '2022/03/10' WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_saida = '2023/08/26' WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET data_entrada = 2023/08/25 WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET data_entrada = 2023/08/14 WHERE id_hospedagem = 31300;
+UPDATE hospedagens SET data_entrada = 2023/04/07 WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE id_hospedagem = 90243;
+UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE id_hospedagem = 43481;
+UPDATE hospedagens SET data_saida = '2023/10/11' WHERE id_hospedagem = 59521;
+UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE id_hospedagem = 67875;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospede_hospedagem
