@@ -392,16 +392,16 @@ insert into usuarios_senhas (id_usuario, senha) values (58917, 'uK2$993yYoS0l29'
 insert into usuarios_senhas (id_usuario, senha) values (94575, 'jC6,$jI%t+&');
 
 -- inserts departamentos 
-insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (11, 'Cozinha', 2);
-insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (12, 'Limpeza', 1);
-insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (13, 'Manutenção', 3);
-insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (14, 'Recepção', 4);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (11, 'Cozinhar', 2);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (12, 'Limpar', 1);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (13, 'Manuziar', 3);
+insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (14, 'Recpcionar', 4);
 
 -- inserts cargos
-insert into cargos (id_cargo, nome_cargo, id_departamento) values (111, 'Cozinheiro', 11);
-insert into cargos (id_cargo, nome_cargo, id_departamento) values (122, 'Camareira', 12);
-insert into cargos (id_cargo, nome_cargo, id_departamento) values (133, 'Manutentor', 13);
-insert into cargos (id_cargo, nome_cargo, id_departamento) values (144, 'Recepcionista', 14);
+insert into cargos (id_cargo, nome_cargo, id_departamento) values (111, 'Cozinhei', 11);
+insert into cargos (id_cargo, nome_cargo, id_departamento) values (122, 'Faxineira', 12);
+insert into cargos (id_cargo, nome_cargo, id_departamento) values (133, 'Ajudante', 13);
+insert into cargos (id_cargo, nome_cargo, id_departamento) values (144, 'Balconista', 14);
 
 -- inserts funcionarios
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5318, 'Loella', 'Clara', '', 'wclara0@skyrock.com', 111, 17143);
@@ -585,58 +585,40 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates departamentos
 SET SQL_SAFE_UPDATES = 0;
-UPDATE departamentos SET id_departamento = 21 WHERE id_departamento = 11;
-UPDATE departamentos SET nome_departamento = 'Cozinhar' WHERE nome_departamento = 'Cozinha';
-UPDATE departamentos SET id_chef_departamento = 5 WHERE id_chef_departamento = 2;
-UPDATE departamentos SET id_departamento = 31 WHERE id_departamento = 12;
-UPDATE departamentos SET nome_departamento = 'Limpar' WHERE nome_departamento = 'Limpeza';
-UPDATE departamentos SET id_chef_departamento = 7 WHERE id_chef_departamento = 1;
-UPDATE departamentos SET id_departamento  = 18 WHERE id_departamento = 13;
-UPDATE departamentos SET nome_departamento = 'Manuziar' WHERE nome_departamento = 'Manutenção';
-UPDATE departamentos SET id_chef_departamento = 9 WHERE id_chef_departamento = 3;
-UPDATE departamentos SET id_departamento = 25 WHERE id_departamento = 14; 
+UPDATE departamentos SET nome_departamento = 'Cozinha' WHERE id_departamento = 11;
+UPDATE departamentos SET nome_departamento = 'Limpeza' WHERE id_departamento = 12;
+UPDATE departamentos SET id_chef_departamento = 'Manutenção' WHERE id_departamento = 13;
+UPDATE departamentos SET id_departamento = 'Recepção' WHERE id_departamento = 14;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates usuarios_senhas
 SET SQL_SAFE_UPDATES = 0;
-UPDATE usuarios_senhas SET id_usuario = 21765 WHERE id_usuario = 17143;
-UPDATE usuarios_senhas SET senha = 'h46fjhwk' WHERE senha = 'cK5<bsN\s6v.<Q';
-UPDATE usuarios_senhas SET id_usuario = 59876 WHERE id_usuario = 54005;
-UPDATE usuarios_senhas SET senha = 'aj534dtr' WHERE senha = 'bL6.?8O6"4/';
-UPDATE usuarios_senhas SET id_usuario = 23412 WHERE id_usuario = 33727;
-UPDATE usuarios_senhas SET senha = 'shdncgft' WHERE senha = 'kQ4>5ILf';
-UPDATE usuarios_senhas SET id_usuario  = 54327 WHERE id_usuario = 38210;
-UPDATE usuarios_senhas SET senha = 'mcg45wge' WHERE senha = 'lO0"ISW/ild';
-UPDATE usuarios_senhas SET id_usuario = 09541 WHERE id_usuario = 32441;
-UPDATE usuarios_senhas SET senha = 'msnch39t' WHERE senha = 'eZ7.v~!v'; 
+UPDATE usuarios_senhas SET senha = 'jdl/M<jf' WHERE id_usuario = 17143;
+UPDATE usuarios_senhas SET senha = 'h46fjhwk' WHERE id_usuario = 54005;
+UPDATE usuarios_senhas SET senha = 'gdhvnetr' WHERE id_usuario = 33727;
+UPDATE usuarios_senhas SET senha = 'aj534dtr' WHERE id_usuario = 38210;
+UPDATE usuarios_senhas SET senha = 'oetdgqje' WHERE id_usuario = 32441;
+UPDATE usuarios_senhas SET senha = 'shdncgft' WHERE id_usuario = 80531;
+UPDATE usuarios_senhas SET senha = 'afdnvjgç' WHERE id_usuario = 36302;
+UPDATE usuarios_senhas SET senha = 'mcg45wge' WHERE id_usuario = 52648;
+UPDATE usuarios_senhas SET senha = 'yhwelkft' WHERE id_usuario = 30207;
+UPDATE usuarios_senhas SET senha = 'msnch39t' WHERE id_usuario = 39765; 
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates cargos
 SET SQL_SAFE_UPDATES = 0;
-UPDATE cargos SET id_cargo = 217 WHERE id_cargo = 111;
-UPDATE cargos SET nome_cargo = 'Cozinhara' WHERE nome_cargo = 'Cozinheiro';
-UPDATE cargos SET id_cargo = 598 WHERE id_cargo = 122;
-UPDATE cargos SET nome_cargo = 'Faxineira' WHERE nome_cargo = 'Camareira';
-UPDATE cargos SET id_departamento = 23 WHERE id_departamento = 11;
-UPDATE cargos SET nome_cargo = 'Mecanico' WHERE nome_cargo = 'Manutentor';
-UPDATE cargos SET id_cargo  = 543 WHERE id_cargo = 133;
-UPDATE cargos SET nome_cargo = 'Ajudar' WHERE nome_cargo = 'Recepcionista';
-UPDATE cargos SET id_departamento = 09 WHERE id_departamento = 12;
-UPDATE cargos SET id_departamento = 39 WHERE id_departamento = 13; 
+UPDATE cargos SET nome_cargo = 'Cozinheiro' WHERE id_cargo = 111;
+UPDATE cargos SET nome_cargo = 'Camareira' WHERE id_cargo = 122;
+UPDATE cargos SET nome_cargo = 'Manutentor' WHERE id_cargo = 133;
+UPDATE cargos SET nome_cargo = 'Recepcionista' WHERE id_cargo = 144;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates funcionarios
 SET SQL_SAFE_UPDATES = 0;
-UPDATE funcionarios SET primeiro_nome = 'Lara' WHERE primeiro_nome = 'Loella';
-UPDATE funcionarios SET email = 'pereira0@skyrock.com' WHERE email = 'wclara0@skyrock.com';
-UPDATE funcionarios SET id_usuario = 59843 WHERE id_usuario = 17143;
-UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE primeiro_nome = 'Halimeda';
-UPDATE funcionarios SET sobrenome = 'Rech' WHERE sobrenome = 'Rase';
-UPDATE funcionarios SET primeiro_nome = 'Julio' WHERE primeiro_nome = 'Faina';
-UPDATE funcionarios SET id_cargo  = 133 WHERE id_cargo = 144;
-UPDATE funcionarios SET email = 'theerastour@privacy.gov.au' WHERE email = 'erase1@privacy.gov.au';
-UPDATE funcionarios SET email = 'hamilda2@timesonline.co.uk' WHERE email = 'mhullins2@timesonline.co.uk';
-UPDATE funcionarios SET sobrenome = 'Will' WHERE sobrenome = 'Hullins'; 
+UPDATE funcionarios SET primeiro_nome = 'Lara' WHERE id_funcionario = 5318;
+UPDATE funcionarios SET email = 'pereira0@skyrock.com' WHERE id_funcionario = 4342;
+UPDATE funcionarios SET sobrenome = 'Pereira' WHERE id_funcionario = 5324;
+UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE id_funcionario = 4546;
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete enderecos
