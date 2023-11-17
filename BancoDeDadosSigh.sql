@@ -323,27 +323,29 @@ insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede
 insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (20, 74872, 20, 533);
 
 
+
 -- inserts necessidades_especiais 
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (1, 'Intolerância a Lactose');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (2, 'Deficiência visual');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (1, 'Intolerância a Lactosi');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (2, 'Deficiências visual');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (3, 'Deficiência Auditiva');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (4, 'Deficiência Motora');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (5, 'Paralisia cerebral ');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (6, 'Transtorno Bipolar');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (7, 'Esquizofrinia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (6, 'Transtorno Bipolares');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (7, 'Esquizofrania');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (8, 'Síndrome de down');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (9, 'Doença Celíaca');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (9, 'Doença Selíaca');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (10, 'Intolerância ao gluten');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (11, 'Intolerância a Sacarose');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (11, 'Intolerância a Sacarouse');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (12, 'Intolerância ao milho');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (13, 'Intolerância a castanhas');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (14, 'Paraplegia');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (14, 'Paraplegeia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (15, 'Monoplegia');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (16, 'Amputação');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (16, 'Amputição');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (17, 'Tatraplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (18, 'Triplegia');
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (19, 'Hemiplegia');
-insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomida');
+insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomide');
+
 
 
 
@@ -554,18 +556,19 @@ UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
 UPDATE hospede_hospedagem SET id_hospede_hospedagem = 6 WHERE id_hospede_hospedagem = 7;
 SET SQL_SAFE_UPDATES = 1;
 
+
 -- updates necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
-UPDATE necessidades_especiais SET id_necessidade = 21 WHERE id_necessidade = 1;
-UPDATE necessidades_especiais SET id_necessidade =30 WHERE id_necessidade = 7;
-UPDATE necessidades_especiais SET necessidade_especial = 'Deficiente visual' WHERE necessidade_especial = 'Deficiência visual';
-UPDATE necessidades_especiais SET id_necessidade = 1 WHERE id_necessidade = 20;
-UPDATE necessidades_especiais SET id_necessidade = 22 WHERE id_necessidade = 6;
-UPDATE necessidades_especiais SET necessidade_especial = 'Síndrome de Down' WHERE necessidade_especial = 'síndrome de down';
-UPDATE necessidades_especiais SET id_necessidade = 24 WHERE id_necessidade = 8;
-UPDATE necessidades_especiais SET necessidade_especial= 'Alergia á medicamento Talidomida' WHERE necessidade_especial = 'Talidomia';
-UPDATE necessidades_especiais SET id_necessidade = 25 WHERE id_necessidade = 9;
-UPDATE necessidades_especiais SET necessidade_especial = 'Bipolaridade' WHERE necessidade_especial = 'Transtorno Bipolar';
+UPDATE necessidades_especiais SET necessidade_especial = 'Intolerância a Lactose' WHERE id_necessidade = 1;
+UPDATE necessidades_especiais SET necessidade_especial = 'Esquizofrinia' WHERE id_necessidade = 7;
+UPDATE necessidades_especiais SET necessidade_especial = 'Deficiência visual' WHERE id_necessidade = 2;
+UPDATE necessidades_especiais SET necessidade_especial = 'Talidomida' WHERE id_necessidade = 20;
+UPDATE necessidades_especiais SET necessidade_especial = 'Transtorno Bipolar' WHERE id_necessidade = 6;
+UPDATE necessidades_especiais SET necessidade_especial = 'Paraplegia' WHERE id_necessidade = 14;
+UPDATE necessidades_especiais SET necessidade_especial = 'Síndrome de Down' WHERE id_necessidade = 8;
+UPDATE necessidades_especiais SET necessidade_especial= 'Intolerância a Sacarose' WHERE id_necessidade = 11;
+UPDATE necessidades_especiais SET necessidade_especial = 'Doença Celíaca' WHERE id_necessidade = 9;
+UPDATE necessidades_especiais SET necessidade_especial = 'Amputação' WHERE id_necessidade = 16;
 SET SQL_SAFE_UPDATES = 1;
 
 
