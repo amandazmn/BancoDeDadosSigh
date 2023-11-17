@@ -485,6 +485,23 @@ SELECT * FROM cargos ORDER BY id_cargo;
 SELECT * FROM funcionarios ORDER BY id_funcionario;
 
 
+-- select join para toda a tabelas com chave estrangeira 
+SELECT
+    hospede_hospedagem.id_hospedagem,
+    hospede_hospedagem.id_hospede,
+    hospede_hospedagem.id_quarto,
+    hospedagens.data_entrada,
+    hospedagens.data_saida,
+    hospedes.primeiro_nome as nome_hospede,
+    quartos.id_quarto
+FROM
+    hospede_hospedagem
+INNER JOIN hospedagens ON hospede_hospedagem.id_hospedagem = hospedagens.id_hospedagem
+INNER JOIN hospedes ON hospede_hospedagem.id_hospede = hospedes.id_hospede
+INNER JOIN quartos ON hospede_hospedagem.id_quarto = quartos.id_quarto;
+
+
+
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
 UPDATE enderecos SET estado = 'California', cidade = 'San Jose'  WHERE id_endereco = 321;
@@ -688,3 +705,4 @@ DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 8;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
 SET SQL_SAFE_UPDATES = 1; 
+
