@@ -686,7 +686,6 @@ DELETE FROM necessidades_especiais WHERE id_necessidade = 9;
 DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Esquizofrinia';
 SET SQL_SAFE_UPDATES =  1;
 
-
 -- delete hospedagens
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM hospedagens WHERE id_hospedagem = 74872;
@@ -706,7 +705,6 @@ DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
 SET SQL_SAFE_UPDATES = 1; 
 
-
 -- delete usuarios_senhas
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM usuarios_senhas WHERE senha = 'lP8#(rdO59$O5';
@@ -716,12 +714,30 @@ DELETE FROM usuarios_senhas WHERE senha = 'uK2$993yYoS0l29';
 DELETE FROM usuarios_senhas WHERE senha = 'jC6,$jI%t+&';
 SET SQL_SAFE_UPDATES = 1; 
 
-
 -- delete departamentos
 SET SQL_SAFE_UPDATES = 0; 
-DELETE FROM usuarios_senhas WHERE senha = 'lP8#(rdO59$O5';
-DELETE FROM usuarios_senhas WHERE senha = 'pP9&\KAK.>y/3eg';
-DELETE FROM usuarios_senhas WHERE senha = 'xK1+pH\4uLHt+&';
-DELETE FROM usuarios_senhas WHERE senha = 'uK2$993yYoS0l29';
-DELETE FROM usuarios_senhas WHERE senha = 'jC6,$jI%t+&';
+DELETE FROM departamentos WHERE id_chef_departamento = 1;
+DELETE FROM departamentos WHERE nome_departamento = 'Limpeza';
+DELETE FROM departamentos WHERE id_chef_departamento = 2;
+DELETE FROM departamentos WHERE id_chef_departamento = 3;
+DELETE FROM departamentos WHERE nome_departamento = 'Manutenção';
+SET SQL_SAFE_UPDATES = 1; 
+
+
+-- delete cargos
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM cargos WHERE nome_cargo = 'Recepcionista';
+DELETE FROM cargos WHERE id_departamento = 11;
+DELETE FROM cargos WHERE id_departamento = 12;
+DELETE FROM cargos WHERE nome_cargo = 'Cozinheiro';
+DELETE FROM cargos WHERE id_departamento = 14;
+SET SQL_SAFE_UPDATES = 1; 
+
+-- delete funcionarios
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM funcionarios WHERE primeiro_nome = 'Lara';
+DELETE FROM funcionarios WHERE sobrenome = 'Pereira';
+DELETE FROM funcionarios WHERE nome_social = 'Carla';
+DELETE FROM funcionarios WHERE email = 'pereira0@skyrock.com';
+DELETE FROM funcionarios WHERE primeiro_nome = 'Faina';
 SET SQL_SAFE_UPDATES = 1; 
