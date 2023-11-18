@@ -500,7 +500,14 @@ INNER JOIN hospedagens ON hospede_hospedagem.id_hospedagem = hospedagens.id_hosp
 INNER JOIN hospedes ON hospede_hospedagem.id_hospede = hospedes.id_hospede
 INNER JOIN quartos ON hospede_hospedagem.id_quarto = quartos.id_quarto;
 
+-- select enderecos/hospedes
+SELECT enderecos.id_endereco, hospedes.id_endereco FROM enderecos INNER JOIN hospedes ON enderecos.id_endereco = hospedes.id_endereco;
 
+-- select de hospedes/hospede_hospedagem
+SELECT hospedes.id_hospede, hospede_hospedagem.id_hospede FROM hospedes INNER JOIN hospede_hospedagem ON hospedes.id_hospede = hospede_hospedagem.id_hospede;
+
+-- select quartos/hospede_hospedagem
+SELECT quartos.id_quarto, hospede_hospedagem.id_quarto FROM quartos INNER JOIN hospede_hospedagem ON quartos.id_quarto = hospede_hospedagem.id_quarto;
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
