@@ -561,16 +561,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 2 WHERE id_hospede_hospedagem = 3;
-UPDATE hospede_hospedagem SET id_hospedagem = 26070 WHERE id_hospedagem = 35170;
-UPDATE hospede_hospedagem SET id_hospede = 3 WHERE id_hospede = 9;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 1 WHERE id_hospede_hospedagem = 11;
-UPDATE hospede_hospedagem SET id_quarto = 553 WHERE id_quarto = 533;
-UPDATE hospede_hospedagem SET id_quarto = 222 WHERE id_quarto = 864;
-UPDATE hospede_hospedagem SET id_quarto = 849 WHERE id_quarto = 978;
-UPDATE hospede_hospedagem SET id_hospedagem = 26399 WHERE id_hospedagem = 26277;
-UPDATE hospede_hospedagem SET id_hospedagem = 33485 WHERE id_hospedagem = 33210;
-UPDATE hospede_hospedagem SET id_hospede_hospedagem = 6 WHERE id_hospede_hospedagem = 7;
+UPDATE hospede_hospedagem SET id_hospede = 5 WHERE id_hospede_hospedagem = 1;
+UPDATE hospede_hospedagem SET id_hospede = 6 WHERE id_hospede_hospedagem = 9;
+UPDATE hospede_hospedagem SET id_hospede = 4 WHERE id_hospede_hospedagem = 9;
+UPDATE hospede_hospedagem SET id_hospede = 1 WHERE id_hospede_hospedagem = 11;
+UPDATE hospede_hospedagem SET id_quarto = 869 WHERE id_hospede_hospedagem = 5;
+UPDATE hospede_hospedagem SET id_quarto = 894 WHERE id_hospede_hospedagem = 8;
+UPDATE hospede_hospedagem SET id_quarto = 924 WHERE id_hospede_hospedagem = 7;
+UPDATE hospede_hospedagem SET id_hospede = 20 WHERE id_hospede_hospedagem = 6;
+UPDATE hospede_hospedagem SET id_hospede = 18 WHERE id_hospede_hospedagem = 10;
+UPDATE hospede_hospedagem SET id_hospede = 6 WHERE id_hospede_hospedagem = 19;
 SET SQL_SAFE_UPDATES = 1;
 
 
