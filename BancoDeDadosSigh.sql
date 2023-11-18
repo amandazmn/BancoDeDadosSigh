@@ -607,8 +607,8 @@ SET SQL_SAFE_UPDATES = 1;
 SET SQL_SAFE_UPDATES = 0;
 UPDATE departamentos SET nome_departamento = 'Cozinha' WHERE id_departamento = 11;
 UPDATE departamentos SET nome_departamento = 'Limpeza' WHERE id_departamento = 12;
-UPDATE departamentos SET id_chef_departamento = 'Manutenção' WHERE id_departamento = 13;
-UPDATE departamentos SET id_departamento = 'Recepção' WHERE id_departamento = 14;
+UPDATE departamentos SET nome_departamento = 'Manutenção' WHERE id_departamento = 13;
+UPDATE departamentos SET nome_departamento = 'Recepção' WHERE id_departamento = 14;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates usuarios_senhas
@@ -706,3 +706,22 @@ DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
 SET SQL_SAFE_UPDATES = 1; 
 
+
+-- delete usuarios_senhas
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM usuarios_senhas WHERE senha = 'lP8#(rdO59$O5';
+DELETE FROM usuarios_senhas WHERE senha = 'pP9&\KAK.>y/3eg';
+DELETE FROM usuarios_senhas WHERE senha = 'xK1+pH\4uLHt+&';
+DELETE FROM usuarios_senhas WHERE senha = 'uK2$993yYoS0l29';
+DELETE FROM usuarios_senhas WHERE senha = 'jC6,$jI%t+&';
+SET SQL_SAFE_UPDATES = 1; 
+
+
+-- delete departamentos
+SET SQL_SAFE_UPDATES = 0; 
+DELETE FROM usuarios_senhas WHERE senha = 'lP8#(rdO59$O5';
+DELETE FROM usuarios_senhas WHERE senha = 'pP9&\KAK.>y/3eg';
+DELETE FROM usuarios_senhas WHERE senha = 'xK1+pH\4uLHt+&';
+DELETE FROM usuarios_senhas WHERE senha = 'uK2$993yYoS0l29';
+DELETE FROM usuarios_senhas WHERE senha = 'jC6,$jI%t+&';
+SET SQL_SAFE_UPDATES = 1; 
