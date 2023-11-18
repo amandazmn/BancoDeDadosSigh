@@ -641,12 +641,14 @@ UPDATE funcionarios SET sobrenome = 'Pereira' WHERE id_funcionario = 5324;
 UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE id_funcionario = 4546;
 SET SQL_SAFE_UPDATES = 1;
 
+SET FOREIGN_KEY_CHECKS = 0;
+
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
-DELETE FROM enderecos WHERE id_endereco = 321;
-DELETE FROM enderecos WHERE estado = 'Geórgia';
-DELETE FROM enderecos WHERE cidade = 'San Jose';
-DELETE FROM enderecos WHERE endereco = 'PO Box 40575';
+DELETE FROM enderecos WHERE numero = 7253;
+DELETE FROM enderecos WHERE estado = 'California';
+DELETE FROM enderecos WHERE cidade = 'Long Beach';
+DELETE FROM enderecos WHERE endereco = 'PO Box 73200';
 DELETE FROM enderecos WHERE complemento = 'Casa';
 SET SQL_SAFE_UPDATES = 1;
 
@@ -656,7 +658,7 @@ DELETE FROM hospedes WHERE id_hospede = 1;
 DELETE FROM hospedes WHERE primeiro_nome = 'Bee';
 DELETE FROM hospedes WHERE sobrenome = 'Wetter';
 DELETE FROM hospedes WHERE genero = 'Female';
-DELETE FROM hospedes WHERE data_nasciemento = '2022-11-10';
+DELETE FROM hospedes WHERE data_nascimento = '2022-11-10';
 SET SQL_SAFE_UPDATES = 1;
 
 -- delete hospede_hospedagem
