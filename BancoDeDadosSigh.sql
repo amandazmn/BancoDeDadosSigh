@@ -787,7 +787,7 @@ DELETE FROM necessidades_especiais WHERE id_necessidade = 9;
 DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Esquizofrinia';
 SET SQL_SAFE_UPDATES =  1;
 
---------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------
 
 -- delete hospedagens
 SET SQL_SAFE_UPDATES = 0; 
