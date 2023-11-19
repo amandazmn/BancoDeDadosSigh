@@ -459,6 +459,7 @@ SELECT COUNT(*) FROM cargos;
 
 SELECT COUNT(*) FROM funcionarios;
 
+SELECT COUNT(*) FROM pedidos;
 
 -- select all
 
@@ -484,6 +485,7 @@ SELECT * FROM cargos ORDER BY id_cargo;
 
 SELECT * FROM funcionarios ORDER BY id_funcionario;
 
+SELECT * FROM pedidos ORDER BY id_pedidos;
 
 -- select join para toda a tabelas com chave estrangeira 
 SELECT
@@ -527,6 +529,12 @@ FROM
 INNER JOIN cargos ON funcionarios.id_cargo = cargos.id_cargo
 INNER JOIN usuarios_senhas ON funcionarios.id_usuario = usuarios_senhas.id_usuario;
 
+
+-- select join pedidos
+SELECT * FROM pedidos 
+INNER JOIN hospedagens ON pedidos.id_hospedagem = hospedagens.id_hospedagem
+INNER JOIN quartos ON quartos.id_quarto = pedidos.id_quarto
+INNER JOIN departamentos ON departamentos.id_departamento = pedidos.id_departamento;
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
@@ -667,6 +675,21 @@ UPDATE funcionarios SET sobrenome = 'Pereira' WHERE id_funcionario = 5324;
 UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE id_funcionario = 4546;
 SET SQL_SAFE_UPDATES = 1;
 
+-- updates pedidos
+SET SQL_SAFE_UPDATES = 0;
+UPDATE pedidos SET id_departamento = 13 WHERE id_pedidos = 11;
+UPDATE pedidos SET data_horario = '2023-02-25 22:18:08' WHERE id_pedidos = 20;
+UPDATE pedidos SET pago = 1 WHERE id_pedidos = 12;
+UPDATE pedidos SET descricao = 'Porcao de batata frita com bacon' WHERE id_pedidos = 1;
+UPDATE pedidos SET preco = 84.5 WHERE id_pedidos = 8;
+UPDATE pedidos SET entregue = 1 WHERE id_pedidos = 13;
+UPDATE pedidos SET quantidade = 2 WHERE id_pedidos = 19;
+UPDATE pedidos SET pronto = 1 WHERE id_pedidos = 15;
+UPDATE pedidos SET descricao = 'Trocar toalhas, roupa de cama e tapetes' WHERE id_pedidos = 18;
+UPDATE pedidos SET preco = 20.0 WHERE id_pedidos = 14;
+SET SQL_SAFE_UPDATES = 1;
+
+
 SET FOREIGN_KEY_CHECKS = 0;
 
 -- delete enderecos
@@ -769,3 +792,10 @@ DELETE FROM funcionarios WHERE nome_social = 'Carla';
 DELETE FROM funcionarios WHERE email = 'pereira0@skyrock.com';
 DELETE FROM funcionarios WHERE primeiro_nome = 'Faina';
 SET SQL_SAFE_UPDATES = 1; 
+
+-- delete pedidos
+DELETE FROM pedidos WHERE id_pedidos = 1;
+DELETE FROM pedidos WHERE id_pedidos = 5;
+DELETE FROM pedidos WHERE id_pedidos = 10;
+DELETE FROM pedidos WHERE id_pedidos = 15;
+DELETE FROM pedidos WHERE id_pedidos = 20;
