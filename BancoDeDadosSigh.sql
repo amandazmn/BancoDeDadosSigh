@@ -234,6 +234,8 @@ insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numer
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (324, 'Virginia', 'Simi Valley', 'Room 240', 'Casa', 2097);
 insert into enderecos (id_endereco, estado, cidade, endereco, complemento, numero) values (166, 'California', 'Long Beach', 'PO Box 73200', 'Casa', 2920);   
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- inserts hospedes
 insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (1, 'Beee', 'Wettter', 'Phyllys', 'Female', '2022-11-10', 'United states', 450363329, 'us038789', 'pwetter0@irs.gov', 477748784, 321, null);
 insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (2, 'Josefina', 'Canby', 'Wyn', 'Genderfluid', '2023-02-25', 'Brazil', 875492836, 'ws637030', 'wcanby1@exblog.jp', 085921159, 716, null);
@@ -255,6 +257,8 @@ insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero,
 insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (18, 'Alexandra', 'Rochelle', 'Caye', 'Femalle', '2020-09-10', 'Uruguay', 360582163, 'dr428661', 'crochelleh@wsj.com', 319674200, 642, null);
 insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (19, 'Aundrea', 'Bonicelli', 'Nicole', 'Female', '2023-12-03', 'Portugal', 873361330, 'sw043537', 'nbonicellii@ask.com', 128297256, 324, 18);
 insert into hospedes (id_hospede, primeiro_nome, sobrenome, nome_social, genero, data_nascimento, nacionalidade, cpf, passaporte, email, telefone, id_endereco, id_responsavel) values (20, 'Quinlan', 'Tregensoe', 'Clayborn', 'Male', '2023-05-19', 'Brazil', 764965966, 'se327774', 'ctregensoej@mac.com', 519622918, 166, null);
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- inserts quartos 
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (980, '1', '1', 'SIM', '1', '1', '1', '194.64', 4, 3, 4);
@@ -278,6 +282,8 @@ insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, fr
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (183, '1', '0', 'NÃO', '0', '1', '0', '108.83', 3, 2, 2);
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (533, '0', '1', 'SIM', '1', '0', '1', '194.75', 4, 3, 4);
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- inserts hospedagens 
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023-08-27', '2023-08-15');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022-03-17', '2023-03-14');
@@ -299,6 +305,8 @@ insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (86296,
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (34519, '2023-02-03', '2023-02-02');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734, '2022-05-20', '2023-05-15');
 insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023-10-13', '2022-10-02');
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- inserts hospede_hospedagem
 insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (1, 60675, 1, 980);
@@ -322,7 +330,7 @@ insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede
 insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (19, 30734, 19, 183);
 insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (20, 74872, 20, 533);
 
-
+--------------------------------------------------------------------------------------------------------------------
 
 -- inserts necessidades_especiais 
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (1, 'Intolerância a Lactosi');
@@ -347,7 +355,7 @@ insert into necessidades_especiais (id_necessidade, necessidade_especial) values
 insert into necessidades_especiais (id_necessidade, necessidade_especial) values (20, 'Talidomide');
 
 
-
+--------------------------------------------------------------------------------------------------------------------
 
 -- inserts necessidades_hospede 
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (20, 1, 1);
@@ -371,6 +379,8 @@ insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessi
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (2, 19, 19);
 insert into necessidades_hospede (id_necessidade_hospede, id_hospede, id_necessidade) values (1, 20, 20);
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- inserts usuarios_senhas 
 insert into usuarios_senhas (id_usuario, senha) values (17143, 'cK5<bsN\s6v.<Q');
 insert into usuarios_senhas (id_usuario, senha) values (54005, 'bL6.?8O6"4/');
@@ -393,17 +403,22 @@ insert into usuarios_senhas (id_usuario, senha) values (92530, 'xK1+pH\4uLHt+&')
 insert into usuarios_senhas (id_usuario, senha) values (58917, 'uK2$993yYoS0l29');
 insert into usuarios_senhas (id_usuario, senha) values (94575, 'jC6,$jI%t+&');
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- inserts departamentos 
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (11, 'Cozinhar', 2);
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (12, 'Limpar', 1);
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (13, 'Manuziar', 3);
 insert into departamentos (id_departamento, nome_departamento, id_chef_departamento) values (14, 'Recpcionar', 4);
 
+--------------------------------------------------------------------------------------------------------------------
 -- inserts cargos
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (111, 'Cozinhei', 11);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (122, 'Faxineira', 12);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (133, 'Ajudante', 13);
 insert into cargos (id_cargo, nome_cargo, id_departamento) values (144, 'Balconista', 14);
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- inserts funcionarios
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5318, 'Loella', 'Clara', '', 'wclara0@skyrock.com', 111, 17143);
@@ -411,6 +426,7 @@ insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social,
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (5324, 'Faina', 'Hullins', 'Meredeth', 'mhullins2@timesonline.co.uk', 133, 33727);
 insert into funcionarios (id_funcionario, primeiro_nome, sobrenome, nome_social, email, id_cargo, id_usuario) values (4546, 'Ruthann', 'Housbie', 'Carla', 'whousbie3@senate.gov', 144, 38210);
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- inser pedidos
 insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (1, '2023-04-21 11:10:14', 'Porcao Batata frita', 1, 21.67, 1, 1, 1, 60675, 980, 11); 
@@ -434,6 +450,7 @@ insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pro
 insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (19, '2023-09-23 16:18:08', 'Champagne Perrier Jouet Grand Brut 750 ml', 1, 990.5, 1, 1, 1, 86296, 864, 11); 
 insert into pedidos (id_pedidos, data_horario, descricao, quantidade, preco, pronto, entregue, pago, id_hospedagem, id_quarto, id_departamento) values (20, '2023-01-30 22:43:12', 'Janela quebrada', 2, 0.0, 0, 1, 1, 43481, 554, 13);
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- select count 
 
@@ -461,6 +478,8 @@ SELECT COUNT(*) FROM funcionarios;
 
 SELECT COUNT(*) FROM pedidos;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- select all
 
 SELECT * FROM enderecos ORDER BY id_endereco;
@@ -487,21 +506,21 @@ SELECT * FROM funcionarios ORDER BY id_funcionario;
 
 SELECT * FROM pedidos ORDER BY id_pedidos;
 
--- select join para toda a tabelas com chave estrangeira 
-SELECT
-    hospede_hospedagem.id_hospedagem,
-    hospede_hospedagem.id_hospede,
-    hospede_hospedagem.id_quarto,
-    hospedagens.data_entrada,
-    hospedagens.data_saida,
-    hospedes.primeiro_nome as nome_hospede,
-    quartos.id_quarto
-FROM
-    hospede_hospedagem
-INNER JOIN hospedagens ON hospede_hospedagem.id_hospedagem = hospedagens.id_hospedagem
-INNER JOIN hospedes ON hospede_hospedagem.id_hospede = hospedes.id_hospede
-INNER JOIN quartos ON hospede_hospedagem.id_quarto = quartos.id_quarto;
+--------------------------------------------------------------------------------------------------------------------
 
+-- select join para toda a tabelas com chave estrangeira 
+
+	SELECT 
+    necessidade_hospede.id_necessidade_hospede,
+    necessidade_hospede.id_hospede,
+    necessidade_hospede.id_necessidade 
+FROM 
+	necessidade_hospede
+INNER JOIN hospede ON necessidade_hospede.id_hospede = necessidade_hospede.id_hospede
+INNER JOIN necessidade_hospede ON necessidade_hospede.id_necessidade_hospede = necessidade_hospede.id_necessidade_hospede
+INNER JOIN necessidade ON necessidade_hospede.id_necessidade = necessidade_hospede.id_necessidade;
+    
+    -----------------------------------------------------------------------------------------------------------------------
 
 SELECT 
        hospede_hospedagem.id_hospedagem,
@@ -513,6 +532,7 @@ INNER JOIN hospedagens ON hospede_hospedagem.id_hospedagem = hospedagens.id_hosp
 INNER JOIN hospedes ON hospede_hospedagem.id_hospede = hospedes.id_hospede
 INNER JOIN quartos ON hospede_hospedagem.id_quarto = quartos.id_quarto;
 
+--------------------------------------------------------------------------------------------------------------------
 
 SELECT 
        cargos.id_departamento
@@ -520,6 +540,7 @@ FROM
        cargos
 INNER JOIN departamentos ON cargos.id_departamento = departamentos.id_departamento;
 
+--------------------------------------------------------------------------------------------------------------------
 
 SELECT 
        funcionarios.id_cargo,
@@ -529,12 +550,15 @@ FROM
 INNER JOIN cargos ON funcionarios.id_cargo = cargos.id_cargo
 INNER JOIN usuarios_senhas ON funcionarios.id_usuario = usuarios_senhas.id_usuario;
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- select join pedidos
 SELECT * FROM pedidos 
 INNER JOIN hospedagens ON pedidos.id_hospedagem = hospedagens.id_hospedagem
 INNER JOIN quartos ON quartos.id_quarto = pedidos.id_quarto
 INNER JOIN departamentos ON departamentos.id_departamento = pedidos.id_departamento;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
@@ -550,6 +574,7 @@ UPDATE enderecos SET estado = 'Virgínia', cidade = 'Long Beach' WHERE id_endere
 UPDATE enderecos SET cidade = 'Santa Barbara', endereco = 'Suite 8' WHERE id_endereco = 510;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates hospedes
 SET SQL_SAFE_UPDATES = 0;
@@ -565,6 +590,8 @@ UPDATE hospedes SET cpf = 418628632 WHERE id_hospede = 16;
 UPDATE hospedes SET nacionalidade = 'Brazil', nome_social = 'Stillmann' WHERE id_hospede = 11;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- updates quartos 
 SET SQL_SAFE_UPDATES = 0;
 UPDATE quartos SET num_cama_casal = 2 WHERE id_quarto = 980;
@@ -578,6 +605,8 @@ UPDATE quartos SET num_cama_casal = 2 WHERE 278;
 UPDATE quartos SET num_cama_casal = 4 WHERE id_quarto = 301;
 UPDATE quartos SET num_cama_solteiro = 2 WHERE id_quarto = 178; 
 SET SQL_SAFE_UPDATES = 1;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates hospedagens 
 SET SQL_SAFE_UPDATES = 0;
@@ -593,6 +622,8 @@ UPDATE hospedagens SET data_saida = '2023-10-11' WHERE id_hospedagem = 59521;
 UPDATE hospedagens SET data_entrada = '2023-08-14' WHERE id_hospedagem = 67875;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- updates hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
 UPDATE hospede_hospedagem SET id_hospede = 5 WHERE id_hospede_hospedagem = 1;
@@ -607,6 +638,7 @@ UPDATE hospede_hospedagem SET id_hospede = 18 WHERE id_hospede_hospedagem = 10;
 UPDATE hospede_hospedagem SET id_hospede = 6 WHERE id_hospede_hospedagem = 19;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
@@ -622,6 +654,7 @@ UPDATE necessidades_especiais SET necessidade_especial = 'Doença Celíaca' WHER
 UPDATE necessidades_especiais SET necessidade_especial = 'Amputação' WHERE id_necessidade = 16;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates necessidades_hospedes
 SET SQL_SAFE_UPDATES = 0;
@@ -637,6 +670,8 @@ UPDATE  necessidades_hospede SET id_necessidade_hospede = 29 WHERE id_necessidad
 UPDATE  necessidades_hospede SET id_necessidade_hospede = 30 WHERE id_necessidade_hospede = 16;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- updates departamentos
 SET SQL_SAFE_UPDATES = 0;
 UPDATE departamentos SET nome_departamento = 'Cozinha' WHERE id_departamento = 11;
@@ -644,6 +679,8 @@ UPDATE departamentos SET nome_departamento = 'Limpeza' WHERE id_departamento = 1
 UPDATE departamentos SET nome_departamento = 'Manutenção' WHERE id_departamento = 13;
 UPDATE departamentos SET nome_departamento = 'Recepção' WHERE id_departamento = 14;
 SET SQL_SAFE_UPDATES = 1;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates usuarios_senhas
 SET SQL_SAFE_UPDATES = 0;
@@ -659,6 +696,8 @@ UPDATE usuarios_senhas SET senha = 'yhwelkft' WHERE id_usuario = 30207;
 UPDATE usuarios_senhas SET senha = 'msnch39t' WHERE id_usuario = 39765; 
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- updates cargos
 SET SQL_SAFE_UPDATES = 0;
 UPDATE cargos SET nome_cargo = 'Cozinheiro' WHERE id_cargo = 111;
@@ -667,6 +706,8 @@ UPDATE cargos SET nome_cargo = 'Manutentor' WHERE id_cargo = 133;
 UPDATE cargos SET nome_cargo = 'Recepcionista' WHERE id_cargo = 144;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- updates funcionarios
 SET SQL_SAFE_UPDATES = 0;
 UPDATE funcionarios SET primeiro_nome = 'Lara' WHERE id_funcionario = 5318;
@@ -674,6 +715,8 @@ UPDATE funcionarios SET email = 'pereira0@skyrock.com' WHERE id_funcionario = 43
 UPDATE funcionarios SET sobrenome = 'Pereira' WHERE id_funcionario = 5324;
 UPDATE funcionarios SET primeiro_nome = 'Lorela' WHERE id_funcionario = 4546;
 SET SQL_SAFE_UPDATES = 1;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- updates pedidos
 SET SQL_SAFE_UPDATES = 0;
@@ -689,8 +732,7 @@ UPDATE pedidos SET descricao = 'Trocar toalhas, roupa de cama e tapetes' WHERE i
 UPDATE pedidos SET preco = 20.0 WHERE id_pedidos = 14;
 SET SQL_SAFE_UPDATES = 1;
 
-
-SET FOREIGN_KEY_CHECKS = 0;
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete enderecos
 SET SQL_SAFE_UPDATES = 0;
@@ -701,6 +743,8 @@ DELETE FROM enderecos WHERE endereco = 'PO Box 73200';
 DELETE FROM enderecos WHERE complemento = 'Casa';
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- delete hospedes
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM hospedes WHERE id_hospede = 1;
@@ -709,6 +753,8 @@ DELETE FROM hospedes WHERE sobrenome = 'Wetter';
 DELETE FROM hospedes WHERE genero = 'Female';
 DELETE FROM hospedes WHERE data_nascimento = '2022-11-10';
 SET SQL_SAFE_UPDATES = 1;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete hospede_hospedagem
 SET SQL_SAFE_UPDATES = 0;
@@ -719,6 +765,8 @@ DELETE FROM hospede_hospedagem WHERE id_quarto = 980;
 DELETE FROM hospede_hospedagem WHERE id_quarto = 533;
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- delete quartos
 SET SQL_SAFE_UPDATES = 0;
 DELETE FROM quartos WHERE id_quarto = 980;
@@ -727,6 +775,8 @@ DELETE FROM quartos WHERE preco = '194.75';
 DELETE FROM quartos WHERE num_cama_casal = 9;
 DELETE FROM quartos WHERE num_cama_solteiro = 5;
 SET SQL_SAFE_UPDATES = 1;
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete necessidades_especiais
 SET SQL_SAFE_UPDATES = 0;
@@ -737,6 +787,8 @@ DELETE FROM necessidades_especiais WHERE id_necessidade = 9;
 DELETE FROM necessidades_especiais WHERE necessidade_especial = 'Esquizofrinia';
 SET SQL_SAFE_UPDATES =  1;
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- delete hospedagens
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM hospedagens WHERE id_hospedagem = 74872;
@@ -746,6 +798,7 @@ DELETE FROM hospedagens WHERE data_entrada = '2023-02-02';
 DELETE FROM hospedagens WHERE data_saida = '2022-04-18';
 SET SQL_SAFE_UPDATES = 1;
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete necessidades_hospede
 SET SQL_SAFE_UPDATES = 0; 
@@ -756,6 +809,8 @@ DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 14;
 SET SQL_SAFE_UPDATES = 1; 
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- delete usuarios_senhas
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM usuarios_senhas WHERE senha = 'lP8#(rdO59$O5';
@@ -764,6 +819,8 @@ DELETE FROM usuarios_senhas WHERE senha = 'xK1+pH\4uLHt+&';
 DELETE FROM usuarios_senhas WHERE senha = 'uK2$993yYoS0l29';
 DELETE FROM usuarios_senhas WHERE senha = 'jC6,$jI%t+&';
 SET SQL_SAFE_UPDATES = 1; 
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete departamentos
 SET SQL_SAFE_UPDATES = 0; 
@@ -774,6 +831,7 @@ DELETE FROM departamentos WHERE id_chef_departamento = 3;
 DELETE FROM departamentos WHERE nome_departamento = 'Manutenção';
 SET SQL_SAFE_UPDATES = 1; 
 
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete cargos
 SET SQL_SAFE_UPDATES = 0; 
@@ -784,6 +842,8 @@ DELETE FROM cargos WHERE nome_cargo = 'Cozinheiro';
 DELETE FROM cargos WHERE id_departamento = 14;
 SET SQL_SAFE_UPDATES = 1; 
 
+--------------------------------------------------------------------------------------------------------------------
+
 -- delete funcionarios
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM funcionarios WHERE primeiro_nome = 'Lara';
@@ -792,6 +852,8 @@ DELETE FROM funcionarios WHERE nome_social = 'Carla';
 DELETE FROM funcionarios WHERE email = 'pereira0@skyrock.com';
 DELETE FROM funcionarios WHERE primeiro_nome = 'Faina';
 SET SQL_SAFE_UPDATES = 1; 
+
+--------------------------------------------------------------------------------------------------------------------
 
 -- delete pedidos
 DELETE FROM pedidos WHERE id_pedidos = 1;
