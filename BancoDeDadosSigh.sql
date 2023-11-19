@@ -512,6 +512,22 @@ INNER JOIN hospedes ON hospede_hospedagem.id_hospede = hospedes.id_hospede
 INNER JOIN quartos ON hospede_hospedagem.id_quarto = quartos.id_quarto;
 
 
+SELECT 
+       cargos.id_departamento
+FROM
+       cargos
+INNER JOIN departamentos ON cargos.id_departamento = departamentos.id_departamento;
+
+
+SELECT 
+       funcionarios.id_cargo,
+       funcionarios.id_usuario
+FROM 
+       funcionarios
+INNER JOIN cargos ON funcionarios.id_cargo = cargos.id_cargo
+INNER JOIN usuarios_senhas ON funcionarios.id_usuario = usuarios_senhas.id_usuario;
+
+
 -- updates enderecos
 SET SQL_SAFE_UPDATES = 0;
 UPDATE enderecos SET estado = 'California', cidade = 'San Jose'  WHERE id_endereco = 321;
