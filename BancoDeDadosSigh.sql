@@ -279,26 +279,26 @@ insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, fr
 insert into quartos (id_quarto , conserto, limpeza, acessibilidade, banheira, frigobar, ar_condicionado , preco, nummax_hospedes, num_cama_solteiro, num_cama_casal) values (533, '0', '1', 'SIM', '1', '0', '1', '194.75', 4, 3, 4);
 
 -- inserts hospedagens 
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023/08/27', '2023/08/15');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022/03/17', '2023/03/14');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (43481, '2022/01/23', '2023/01/14');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89929, '2022/09/30', '2022/09/28');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (59521, '2023/06/19', '2023/06/17');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (35170, '2023/08/05', '2023/08/04');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (33210, '2022/04/21', '2022/04/19');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (72549, '2022/04/18', '2023/04/16');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (67875, '2022/09/01', '2022/08/27');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (56426, '2022/12/08', '2022/12/06');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (10693, '2022/08/02', '2022/08/30');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14828, '2023/01/05', '2022/01/03');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (31300, '2022/08/12', '2023/08/10');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (26277, '2022/10/08', '2023/10/05');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14853, '2022/03/09', '2022/03/05');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89355, '2022/07/25', '2022/07/21');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (86296, '2023/03/16', '2022/03/10');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (34519, '2023/02/03', '2023/02/02');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734, '2022/05/20', '2023/05/15');
-insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023/10/13', '2022/10/02');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (60675, '2023-08-27', '2023-08-15');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (90243, '2022-03-17', '2023-03-14');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (43481, '2022-01-23', '2023-01-14');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89929, '2022-09-30', '2022-09-28');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (59521, '2023-06-19', '2023-06-17');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (35170, '2023-08-05', '2023-08-04');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (33210, '2022-04-21', '2022-04-19');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (72549, '2022-04-18', '2023-04-16');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (67875, '2022-09-01', '2022-08-27');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (56426, '2022-12-08', '2022-12-06');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (10693, '2022-08-02', '2022-08-30');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14828, '2023-01-05', '2022-01-03');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (31300, '2022-08-12', '2023-08-10');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (26277, '2022-10-08', '2023-10-05');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (14853, '2022-03-09', '2022-03-05');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (89355, '2022-07-25', '2022-07-21');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (86296, '2023-03-16', '2022-03-10');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (34519, '2023-02-03', '2023-02-02');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (30734, '2022-05-20', '2023-05-15');
+insert into hospedagens (id_hospedagem, data_saida, data_entrada) values (74872, '2023-10-13', '2022-10-02');
 
 -- inserts hospede_hospedagem
 insert into hospede_hospedagem (id_hospede_hospedagem, id_hospedagem, id_hospede, id_quarto) values (1, 60675, 1, 980);
@@ -557,16 +557,16 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospedagens 
 SET SQL_SAFE_UPDATES = 0;
-UPDATE hospedagens SET data_saida = '2023/10/12' WHERE id_hospedagem = 89355 ;
-UPDATE hospedagens SET data_saida = '2022/03/10' WHERE id_hospedagem = 86296;
-UPDATE hospedagens SET data_saida = '2023/08/26' WHERE id_hospedagem = 74872;
-UPDATE hospedagens SET data_entrada = '2023/08/25' WHERE id_hospedagem = 74872;
-UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE id_hospedagem = 31300;
-UPDATE hospedagens SET data_entrada = '2023/04/07' WHERE id_hospedagem = 86296;
-UPDATE hospedagens SET data_entrada = '2022/07/22' WHERE id_hospedagem = 90243;
-UPDATE hospedagens SET data_entrada = '2022/08/25' WHERE id_hospedagem = 43481;
-UPDATE hospedagens SET data_saida = '2023/10/11' WHERE id_hospedagem = 59521;
-UPDATE hospedagens SET data_entrada = '2023/08/14' WHERE id_hospedagem = 67875;
+UPDATE hospedagens SET data_saida = '2023-10-12' WHERE id_hospedagem = 89355 ;
+UPDATE hospedagens SET data_saida = '2022-03-10' WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_saida = '2023-08-26' WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET data_entrada = '2023-08-25' WHERE id_hospedagem = 74872;
+UPDATE hospedagens SET data_entrada = '2023-08-14' WHERE id_hospedagem = 31300;
+UPDATE hospedagens SET data_entrada = '2023-04-07' WHERE id_hospedagem = 86296;
+UPDATE hospedagens SET data_entrada = '2022-07-22' WHERE id_hospedagem = 90243;
+UPDATE hospedagens SET data_entrada = '2022-08-25' WHERE id_hospedagem = 43481;
+UPDATE hospedagens SET data_saida = '2023-10-11' WHERE id_hospedagem = 59521;
+UPDATE hospedagens SET data_entrada = '2023-08-14' WHERE id_hospedagem = 67875;
 SET SQL_SAFE_UPDATES = 1;
 
 -- updates hospede_hospedagem
@@ -702,9 +702,9 @@ SET SQL_SAFE_UPDATES =  1;
 SET SQL_SAFE_UPDATES = 0; 
 DELETE FROM hospedagens WHERE id_hospedagem = 74872;
 DELETE FROM hospedagens WHERE id_hospedagem = 60675;
-DELETE FROM hospedagens WHERE data_saida = '2022/09/30';
-DELETE FROM hospedagens WHERE data_entrada = '2023/02/02';
-DELETE FROM hospedagens WHERE data_saida = '2022/04/18';
+DELETE FROM hospedagens WHERE data_saida = '2022-09-30';
+DELETE FROM hospedagens WHERE data_entrada = '2023-02-02';
+DELETE FROM hospedagens WHERE data_saida = '2022-04-18';
 SET SQL_SAFE_UPDATES = 1;
 
 
