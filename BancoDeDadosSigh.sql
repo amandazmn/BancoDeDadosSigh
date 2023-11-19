@@ -507,7 +507,7 @@ SELECT * FROM funcionarios ORDER BY id_funcionario;
 SELECT * FROM pedidos ORDER BY id_pedidos;
 
 --------------------------------------------------------------------------------------------------------------------
-
+use sigh; 
 -- select join para toda a tabelas com chave estrangeira 
 
 	SELECT 
