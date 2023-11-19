@@ -802,7 +802,7 @@ SET SQL_SAFE_UPDATES = 1;
 
 -- delete necessidades_hospede
 SET SQL_SAFE_UPDATES = 0; 
-DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 5;
+DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 9;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 18;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 8;
 DELETE FROM necessidades_hospede WHERE id_necessidade_hospede = 20;
