@@ -511,14 +511,13 @@ use sigh;
 -- select join para toda a tabelas com chave estrangeira 
 
 	SELECT 
-    necessidade_hospede.id_necessidade_hospede,
-    necessidade_hospede.id_hospede,
-    necessidade_hospede.id_necessidade 
+    necessidades_hospede.id_necessidade_hospede,
+    necessidades_hospede.id_hospede,
+    necessidades_hospede.id_necessidade 
 FROM 
-	necessidade_hospede
-INNER JOIN hospede ON necessidade_hospede.id_hospede = necessidade_hospede.id_hospede
-INNER JOIN necessidade_hospede ON necessidade_hospede.id_necessidade_hospede = necessidade_hospede.id_necessidade_hospede
-INNER JOIN necessidade ON necessidade_hospede.id_necessidade = necessidade_hospede.id_necessidade;
+	necessidades_hospede
+INNER JOIN hospedes ON hospedes.id_hospede = necessidades_hospede.id_hospede
+INNER JOIN necessidades_especiais ON necessidades_especiais.id_necessidade = necessidades_hospede.id_necessidade;
     
     -----------------------------------------------------------------------------------------------------------------------
 
